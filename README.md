@@ -4,8 +4,8 @@ The goal of this repo is to build a chatbot that can interact with a tabular SQL
 
 ## Setup
 
-This repo uses (uv)[https://docs.astral.sh/uv/]. To get started, you can run `uv sync` once you have `uv` installed, or you can use `pip`.
+This repo uses [`uv`](https://docs.astral.sh/uv/). To get started, you can run `uv sync` once you have `uv` installed, or you can use `pip`.
 
 ## Data Source
 
-The data comes from the NBA API and was ingested using (`nbastatpy`)[https://pypi.org/project/nbastatpy/].
+The data comes from the NBA API and was ingested using [`nbastatpy`](https://pypi.org/project/nbastatpy/).
