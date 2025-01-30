@@ -9,3 +9,18 @@ This repo uses (uv)[https://docs.astral.sh/uv/]. To get started, you can run `uv
 ## Data Source
 
 The data comes from the NBA API and was ingested using (`nbastatpy`)[https://pypi.org/project/nbastatpy/].
+
+## Workflow
+
+The proposed workflow is shown below. This is currently a work-in-progress and will require adjusting in the future.
+
+1. User makes request
+2. LLM determines which tables are required for the request
+   1. Table dictionary required
+   2. Ask for additional information that may be useful
+3. The selected tables are used to reference a data dictionary for those tables
+4. The LLM writes a SQL query that uses the tables to get the data
+5. The SQL query is ran to get the data
+   1. Retry loop may be required
+6. The LLM interprets the data and writes a response
+

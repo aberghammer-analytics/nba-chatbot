@@ -24,19 +24,24 @@ def process_source_data(
         ),
     ],
 ):
+    # get all folders in input folder
     folders = [file for file in list(input_folder.iterdir()) if file.is_dir()]
 
     data = {}
 
     for folder in track(folders, description="Reading & Processing..."):
-        for file in list(folder.iterdir()):
-            if file.suffix == ".json":
+        for file in list(folder.iterdir()):  # Go through the files in each folder
+            if file.suffix == ".json":  # skip json files
                 continue
 
+            # removes season from file name
             file_name = "_".join(file.stem.split("_", 1)[1:])
 
             df = pd.read_csv(file)
-            if df.shape[0] == 0:
+            if "SEASON" in str(file):
+                df["SEASON_ID"] = str(file.parent.name)
+
+            if df.shape[0] == 0:  # skip empty files
                 continue
 
             if file_name in data.keys():
