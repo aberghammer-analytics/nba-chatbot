@@ -61,9 +61,7 @@ def get_column_definitions(
         df = pd.read_csv(file)
         table_cols = ", ".join(list(df.columns))
 
-        table_definition = table_dictionary["tables"][root_data_folder.name][
-            table_name.lower()
-        ]["description"]
+        table_definition = table_dictionary["tables"][table_name.lower()]["description"]
 
         input_prompt = get_definitions(
             table_name=table_name,
