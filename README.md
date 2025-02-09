@@ -4,6 +4,7 @@ The goal of this repo is to build a chatbot that can interact with a tabular SQL
 
 ## Setup
 
+
 This repo uses [uv](https://docs.astral.sh/uv/). To get started, you can run `uv sync` once you have `uv` installed, or you can use `pip`.
 
 ## Running the App
@@ -29,4 +30,3 @@ The application uses the following workflow under the hood:
 
 > [!WARNING]
 > This is a rough work in progress. The process has some failure points, but this was mainly intended as an experimental application. The database connection and resulting sql code may fail, but you should be able to retry your query.
-
