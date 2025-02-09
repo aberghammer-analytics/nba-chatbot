@@ -5,5 +5,27 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "duckdb-engine>=0.15.0",
+    "duckdb>=1.1.3",
+    "instructor>=1.7.2",
+    "load-dotenv>=0.1.0",
+    "loguru>=0.7.3",
+    "openai>=1.60.2",
     "pandas>=2.2.3",
+    "prompts",
+    "pydantic>=2.10.6",
+    "python-dotenv>=1.0.1",
+    "pyyaml>=6.0.2",
+    "rich>=13.9.4",
+    "sqlalchemy>=2.0.37",
+    "streamlit>=1.42.0",
+    "typer>=0.15.1",
 ]
+
+[tool.uv]
+dev-dependencies = [
+    "ipykernel>=6.29.5",
+]
+
+[tool.uv.sources]
+prompts = { git = "https://github.com/dottxt-ai/prompts" }
