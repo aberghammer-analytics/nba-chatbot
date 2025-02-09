@@ -1,0 +1,321 @@
+tables:
+  combine_stats:
+    description: "Combine stats for all players with data gathered during the NBA combine"
+    table_grain: "player"
+    metric_grain: "totals"
+    player_vs_team: "player"
+  common_info:
+    description: "Common information such as height and weight for all players"
+    table_grain: "player"
+    metric_grain: "totals"
+    player_vs_team: "player"
+  catchshoot_player:
+    description: "Per Game Average catch and shoot stats for all players for a given season"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  catchshoot_team:
+    description: "Per Game Average catch and shoot stats for all teams for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  cut_player:
+    description: "Per Game Average cut stats for all players for a given season"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  cut_team:
+    description: "Per Game Average cut stats for all teams for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  defense_player:
+    description: "Per Game Average defense stats for all players for a given season"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  defense_team:
+    description: "Per Game Average defense stats for all teams for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  drives_player: 
+    description: "Per Game Average stats for drives for all players for a given season"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  drives_team:
+    description: "Per Game Average stats for drives for all teams for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  efficiency_player:
+    description: "Efficency stats for all players for a given season across play types"
+    table_grain: "player"
+    metric_grain: "average" 
+    player_vs_team: "player"
+  efficiency_team:
+    description: "Efficiency stats for all teams for a given season across play types"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  elbowtouch_player:
+    description: "Average stats for all players when receiving the ball at the elbow for a given season"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  elbowtouch_team:
+    description: "Average stats for all teams when receiving the ball at the elbow for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  handoff_player:
+    description: "Average stats for all players when running a dribble handoff for a given season"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  handoff_team:
+    description: "Average stats for all teams when running a dribble handoff for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  isolation_player:
+    description: "Average stats for all players when running an isolation play for a given season"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  isolation_team:
+    description: "Average stats for all teams when running an isolation play for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  lineup_details:
+    description: "Average rate statistics for all lineups for a given season with player lineups in the format First Letter of First Name period space Last Name"
+    table_grain: "lineup"
+    metric_grain: "average"
+    player_vs_team: "lineup"
+  lineups:
+    description: "Basic statistics for all lineups for a given season with player lineups in the format First Letter of First Name period space Last Name"
+    table_grain: "lineup"
+    metric_grain: "average"
+    player_vs_team: "lineup"
+  misc_player:
+    description: "Miscellaneous stats such as points per possession for all players for a given season"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  misc_team:
+    description: "Miscellaneous stats such as points per possession for all teams for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  offrebound_player:
+    description: "Outcome statistics for when a player gets an offensive rebound for a given season"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  offrebound_team:
+    description: "Outcome statistics for when a team gets an offensive rebound for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  offscreen_player:
+    description: "Outcome statistics for when a player comes off a screen for a given season"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  offscreen_team:
+    description: "Outcome statistics for when a team comes off a screen for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  opponent_shooting:
+    description: "Statistics for how well an opponent shoots against a team for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  painttouch_player:
+    description: "Outcome statistics for when a player touches the ball in the paint for a given season"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  painttouch_team:
+    description: "Outcome statistics for when a team touches the ball in the paint for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  passing_player:
+    description: "Passing statistics for all players for a given season"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  passing_team:
+    description: "Passing statistics for all teams for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  player_clutch:
+    description: "Statistics for all players in clutch situations for a given season"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  player_defense:
+    description: "Statistics for all players on defense for a given season"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  player_games:
+    description: "Box scores for each player for each game in a given season"
+    table_grain: "game"
+    metric_grain: "totals"
+    player_vs_team: "player"
+  player_hustle:
+    description: "Hustle statistics such as charges and deflections and others for all players for a given season"
+    table_grain: "player"
+    metric_grain: "totals"
+    player_vs_team: "player"
+  player_matchups:
+    description: "Statistics for a player against another player for a given season"
+    table_grain: "matchup"
+    metric_grain: "totals"
+    player_vs_team: "player"
+  player_shot_locations:
+    description: "Shooting statistics for each player for a given season across various shot locations"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  player_shots:
+    description: "Basic shooting statistics for each player for a given season across shot type" 
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  player_stats:
+    description: "Only boxscores for a given player for a given season"
+    table_grain: "player"
+    metric_grain: "average" 
+    player_vs_team: "player"
+  possessions_player:
+    description: "Statistics on how often and how long a player touches the ball for a given season"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  possessions_team:
+    description: "Statistics on how often and how long a team touches the ball for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  posttouch_player:
+    description: "Statistics on how often and how long a team touches the ball in the post for a given season"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  posttouch_team:
+    description: "Statistics on how often and how long a team touches the ball in the post for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  postup_player:
+    description: "Outcome statistics for how a player performs when in a postup situation for a given season"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  postup_team:
+    description: "Outcome statistics for how a team performs when in a postup situation for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  prballhandler_player:
+    description: "Outcome statistics for how a player performs when in a pick and roll situation as the ball handler for a given season"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  prballhandler_team:
+    description: "Outcome statistics for how a team performs when in a pick and roll situation as the ball handler for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  prrollman_player:
+    description: "Outcome statistics for how a player performs when in a pick and roll situation as the rollman for a given season"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  prrollman_team:
+    description: "Outcome statistics for how a team performs when in a pick and roll situation as the rollman for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  pullupshot_player:
+    description: "Outcome statistics for how a player performs when taking a pull up shot for a given season"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  pullupshot_team:
+    description: "Outcome statistics for how a team performs when taking a pull up shot for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  salaries:
+    description: "Player salary data for a given season"
+    table_grain: "player"
+    metric_grain: "totals"
+    player_vs_team: "player"
+  speeddistance_player:
+    description: "Speed and distance statistics for a given player for a given season"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  speeddistance_team:
+    description: "Speed and distance statistics for a given team for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  spotup_player:
+    description: "Average player statistics for spotup plays for a given season"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  spotup_team:
+    description: "Average team statistics for spotup plays for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  team_clutch:
+    description: "Statistics for all teams in clutch time for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  team_defense:
+    description: "Statistics for team defense for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  team_games:
+    description: "Boxscores for each game at the team level for a given season"
+    table_grain: "team"
+    metric_grain: "totals"
+    player_vs_team: "team game"
+  team_hustle:
+    description: "Hustle stats for each team for a given season such as charges drawn and shot contests"
+    table_grain: "team" 
+    metric_grain: "average"
+    player_vs_team: "team"
+  team_shot_locations: 
+    description: "Shot location statistics for a given team for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  team_stats:
+    description: "Basic statistics for each team for a given season"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"
+  transition_player:
+    description: "Statistics for a given player for a given season for plays in transition"
+    table_grain: "player"
+    metric_grain: "average"
+    player_vs_team: "player"
+  transition_team: 
+    description: "Statistics for a given team for a given season for plays in transition"
+    table_grain: "team"
+    metric_grain: "average"
+    player_vs_team: "team"

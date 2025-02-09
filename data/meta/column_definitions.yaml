@@ -1,0 +1,2025 @@
+CatchShoot_player:
+- PLAYER_ID: Unique identifier for the player.
+- PLAYER_NAME: Name of the player.
+- TEAM_ID: Unique identifier for the team.
+- TEAM_ABBREVIATION: Abbreviated name of the team.
+- GP: Total games played by the player in the season.
+- W: Total wins by the player's team for the season.
+- L: Total losses by the player's team for the season.
+- MIN: Average minutes played per game by the player.
+- CATCH_SHOOT_FGM: Average field goals made on catch-and-shoot attempts per game.
+- CATCH_SHOOT_FGA: Average field goals attempted on catch-and-shoot attempts per game.
+- CATCH_SHOOT_FG_PCT: Average field goal percentage on catch-and-shoot attempts.
+- CATCH_SHOOT_PTS: Average points scored from catch-and-shoot attempts per game.
+- CATCH_SHOOT_FG3M: Average three-point field goals made on catch-and-shoot attempts
+    per game.
+- CATCH_SHOOT_FG3A: Average three-point field goals attempted on catch-and-shoot attempts
+    per game.
+- CATCH_SHOOT_FG3_PCT: Average three-point field goal percentage on catch-and-shoot
+    attempts.
+- CATCH_SHOOT_EFG_PCT: Average effective field goal percentage on catch-and-shoot
+    attempts.
+- SEASON_ID: Unique identifier for the season.
+CatchShoot_team:
+- TEAM_ID: Unique identifier for the team.
+- TEAM_ABBREVIATION: Abbreviated name of the team.
+- TEAM_NAME: Full name of the team.
+- GP: Total number of games played by the team in the season.
+- W: Total number of wins by the team in the season.
+- L: Total number of losses by the team in the season.
+- MIN: Average minutes played by the team per game.
+- CATCH_SHOOT_FGM: Average number of field goals made on catch and shoot attempts
+    per game.
+- CATCH_SHOOT_FGA: Average number of field goals attempted on catch and shoot attempts
+    per game.
+- CATCH_SHOOT_FG_PCT: Average field goal percentage on catch and shoot attempts.
+- CATCH_SHOOT_PTS: Average points scored from catch and shoot attempts per game.
+- CATCH_SHOOT_FG3M: Average number of three-point field goals made on catch and shoot
+    attempts per game.
+- CATCH_SHOOT_FG3A: Average number of three-point field goals attempted on catch and
+    shoot attempts per game.
+- CATCH_SHOOT_FG3_PCT: Average three-point field goal percentage on catch and shoot
+    attempts.
+- CATCH_SHOOT_EFG_PCT: Average effective field goal percentage for catch and shoot
+    attempts.
+- SEASON_ID: Identifier for the specific season of the stats.
+Cut_player:
+- SEASON_ID: Unique identifier for the season.
+- PLAYER_ID: Unique identifier for the player.
+- PLAYER_NAME: Full name of the player.
+- TEAM_ID: Unique identifier for the team.
+- TEAM_ABBREVIATION: Abbreviated name of the team.
+- TEAM_NAME: Full name of the team.
+- PLAY_TYPE: Type of play occurring during the statistics.
+- TYPE_GROUPING: Category grouping for the type of play.
+- PERCENTILE: Statistical rank of the player's performance within the league.
+- GP: Games played by the player during the season.
+- POSS_PCT: Percentage of total possessions used by the player.
+- PPP: Points per possession for the player.
+- FG_PCT: Field goal percentage of the player.
+- FT_POSS_PCT: Percentage of possessions that were free throw attempts.
+- TOV_POSS_PCT: Percentage of possessions that resulted in turnovers.
+- SF_POSS_PCT: Percentage of possessions that resulted in shoot fouls.
+- PLUSONE_POSS_PCT: Percentage of possessions that resulted in plus one opportunities.
+- SCORE_POSS_PCT: Percentage of possessions that resulted in scoring.
+- EFG_PCT: Effective field goal percentage of the player.
+- POSS: Total possessions used by the player.
+- PTS: Total points scored by the player.
+- FGM: Total field goals made by the player.
+- FGA: Total field goals attempted by the player.
+- FGMX: Total field goals made from extended range.
+Cut_team:
+- SEASON_ID: Identifier for the NBA season.
+- TEAM_ID: Unique identifier for the team.
+- TEAM_ABBREVIATION: Abbreviated name of the team.
+- TEAM_NAME: Full name of the team.
+- PLAY_TYPE: Type of play (e.g., transition, halfcourt).
+- TYPE_GROUPING: Category grouping of the play types.
+- PERCENTILE: Statistical percentile ranking of the team compared to others.
+- GP: Games played by the team in the season.
+- POSS_PCT: Percentage of total possessions attributed to the team.
+- PPP: Points per possession, indicating scoring efficiency.
+- FG_PCT: Field goal percentage, representing successful field goals made.
+- FT_POSS_PCT: Percentage of possessions resulting in free throw attempts.
+- TOV_POSS_PCT: Percentage of possessions resulting in turnovers.
+- SF_POSS_PCT: Percentage of possessions resulting in second chance points.
+- PLUSONE_POSS_PCT: Percentage of possessions with a successful 'and-one' play.
+- SCORE_POSS_PCT: Percentage of possessions resulting in points scored.
+- EFG_PCT: Effective field goal percentage, adjusted for three-point shots.
+- POSS: Total possessions used by the team.
+- PTS: Total points scored by the team.
+- FGM: Total field goals made by the team.
+- FGA: Total field goals attempted by the team.
+- FGMX: Total field goals made excluding specific types of shots.
+Defense_player:
+- PLAYER_ID: Unique identifier for each player.
+- PLAYER_NAME: Full name of the player.
+- TEAM_ID: Unique identifier for the team to which the player belongs.
+- TEAM_ABBREVIATION: Abbreviated name of the team (e.g., LAL for Los Angeles Lakers).
+- GP: Total games played by the player in the season.
+- W: Total wins for the player's team in the season.
+- L: Total losses for the player's team in the season.
+- MIN: Average minutes played per game by the player.
+- STL: Average steals per game by the player.
+- BLK: Average blocks per game by the player.
+- DREB: Average defensive rebounds per game by the player.
+- DEF_RIM_FGM: Average field goals made at the rim by the player on defense.
+- DEF_RIM_FGA: Average field goals attempted at the rim by the player on defense.
+- DEF_RIM_FG_PCT: Average field goal percentage allowed at the rim by the player on
+    defense.
+- SEASON_ID: Unique identifier for the season.
+Defense_team:
+- TEAM_ID: Unique identifier for each team.
+- TEAM_ABBREVIATION: Abbreviated name of the team.
+- TEAM_NAME: Full name of the team.
+- GP: Average number of games played in the season.
+- W: Average number of games won.
+- L: Average number of games lost.
+- MIN: Average minutes played per game.
+- STL: Average steals per game.
+- BLK: Average blocks per game.
+- DREB: Average defensive rebounds per game.
+- DEF_RIM_FGM: Average field goals made by opponents at the rim per game.
+- DEF_RIM_FGA: Average field goals attempted by opponents at the rim per game.
+- DEF_RIM_FG_PCT: Average field goal percentage of opponents at the rim.
+- SEASON_ID: Identifier for the specific season.
+Drives_player:
+- PLAYER_ID: Unique identifier for each player
+- PLAYER_NAME: Full name of the player
+- TEAM_ID: Unique identifier for the team the player belongs to
+- TEAM_ABBREVIATION: Abbreviated name of the team (e.g., LAL for Los Angeles Lakers)
+- GP: Games played by the player in the season
+- W: Total wins by the player's team in the season
+- L: Total losses by the player's team in the season
+- MIN: Average minutes played per game by the player
+- DRIVES: Average number of drives per game by the player
+- DRIVE_FGM: Average number of field goals made on drives per game by the player
+- DRIVE_FGA: Average number of field goals attempted on drives per game by the player
+- DRIVE_FG_PCT: Average field goal percentage on drives for the player
+- DRIVE_FTM: Average number of free throws made on drives per game by the player
+- DRIVE_FTA: Average number of free throws attempted on drives per game by the player
+- DRIVE_FT_PCT: Average free throw percentage on drives for the player
+- DRIVE_PTS: Average points scored from drives per game by the player
+- DRIVE_PTS_PCT: Percentage of total points scored from drives by the player
+- DRIVE_PASSES: Average number of passes made during drives per game by the player
+- DRIVE_PASSES_PCT: Percentage of drives that resulted in a pass by the player
+- DRIVE_AST: Average number of assists made during drives per game by the player
+- DRIVE_AST_PCT: Percentage of drives that resulted in an assist by the player
+- DRIVE_TOV: Average number of turnovers made during drives per game by the player
+- DRIVE_TOV_PCT: Percentage of drives that resulted in a turnover by the player
+- DRIVE_PF: Average number of personal fouls drawn during drives per game by the player
+- DRIVE_PF_PCT: Percentage of drives that resulted in a personal foul drawn by the
+    player
+- SEASON_ID: Unique identifier for the season being analyzed
+Drives_team:
+- TEAM_ID: Unique identifier for the team.
+- TEAM_ABBREVIATION: Abbreviation representing the team (e.g., LAL for Los Angeles
+    Lakers).
+- TEAM_NAME: Full name of the team.
+- GP: Total number of games played in the season.
+- W: Total number of wins in the season.
+- L: Total number of losses in the season.
+- MIN: Average minutes played per game.
+- DRIVES: Average number of drives per game.
+- DRIVE_FGM: Average field goals made from drives per game.
+- DRIVE_FGA: Average field goals attempted from drives per game.
+- DRIVE_FG_PCT: Average field goal percentage from drives.
+- DRIVE_FTM: Average free throws made from drives per game.
+- DRIVE_FTA: Average free throws attempted from drives per game.
+- DRIVE_FT_PCT: Average free throw percentage from drives.
+- DRIVE_PTS: Average points scored from drives per game.
+- DRIVE_PTS_PCT: Percentage of total points scored from drives.
+- DRIVE_PASSES: Average number of passes made during drives per game.
+- DRIVE_PASSES_PCT: Percentage of total team passes that occur during drives.
+- DRIVE_AST: Average assists generated from drives per game.
+- DRIVE_AST_PCT: Percentage of total team assists that occur from drives.
+- DRIVE_TOV: Average turnovers committed during drives per game.
+- DRIVE_TOV_PCT: Percentage of total team turnovers that occur during drives.
+- DRIVE_PF: Average personal fouls committed during drives per game.
+- DRIVE_PF_PCT: Percentage of total team fouls that occur during drives.
+- SEASON_ID: Unique identifier for the season.
+Efficiency_player:
+- PLAYER_ID: Unique identifier for the player.
+- PLAYER_NAME: Full name of the player.
+- TEAM_ID: Unique identifier for the team the player belongs to.
+- TEAM_ABBREVIATION: Abbreviated name of the team (e.g., LAL for Los Angeles Lakers).
+- GP: Total games played by the player in the given season.
+- W: Total wins by the player's team in the given season.
+- L: Total losses by the player's team in the given season.
+- MIN: Average minutes played by the player per game.
+- POINTS: Average points scored by the player per game.
+- DRIVE_PTS: Average points scored by the player on drives per game.
+- DRIVE_FG_PCT: Field goal percentage on drives.
+- CATCH_SHOOT_PTS: Average points scored by the player on catch-and-shoot attempts
+    per game.
+- CATCH_SHOOT_FG_PCT: Field goal percentage on catch-and-shoot attempts.
+- PULL_UP_PTS: Average points scored by the player on pull-up shots per game.
+- PULL_UP_FG_PCT: Field goal percentage on pull-up shots.
+- PAINT_TOUCH_PTS: Average points scored by the player on paint touch possessions
+    per game.
+- PAINT_TOUCH_FG_PCT: Field goal percentage on paint touch possessions.
+- POST_TOUCH_PTS: Average points scored by the player on post-touch possessions per
+    game.
+- POST_TOUCH_FG_PCT: Field goal percentage on post-touch possessions.
+- ELBOW_TOUCH_PTS: Average points scored by the player on elbow touch possessions
+    per game.
+- ELBOW_TOUCH_FG_PCT: Field goal percentage on elbow touch possessions.
+- EFF_FG_PCT: Effective field goal percentage, which accounts for the value of three-point
+    field goals.
+- SEASON_ID: Identifier for the season data being referred to.
+Efficiency_team:
+- TEAM_ID: Unique identifier for each team.
+- TEAM_ABBREVIATION: Abbreviated name of the team.
+- TEAM_NAME: Full name of the team.
+- GP: Total number of games played by the team in the season.
+- W: Total number of games won by the team in the season.
+- L: Total number of games lost by the team in the season.
+- MIN: Total minutes played by the team.
+- POINTS: Total points scored by the team.
+- DRIVE_PTS: Total points scored on drives to the basket.
+- DRIVE_FG_PCT: Field goal percentage for shots taken on drives.
+- CATCH_SHOOT_PTS: Total points scored from catch-and-shoot situations.
+- CATCH_SHOOT_FG_PCT: Field goal percentage for catch-and-shoot attempts.
+- PULL_UP_PTS: Total points scored from pull-up shots.
+- PULL_UP_FG_PCT: Field goal percentage for pull-up shots.
+- PAINT_TOUCH_PTS: Total points scored after touching the ball in the paint.
+- PAINT_TOUCH_FG_PCT: Field goal percentage for shots taken after paint touches.
+- POST_TOUCH_PTS: Total points scored after touching the ball in the post.
+- POST_TOUCH_FG_PCT: Field goal percentage for shots taken after post touches.
+- ELBOW_TOUCH_PTS: Total points scored after touching the ball at the elbow.
+- ELBOW_TOUCH_FG_PCT: Field goal percentage for shots taken after elbow touches.
+- EFF_FG_PCT: Effective field goal percentage accounting for three-point shots.
+- SEASON_ID: Identifier for the specific season.
+ElbowTouch_player:
+- PLAYER_ID: Unique identifier for the player.
+- PLAYER_NAME: Full name of the player.
+- TEAM_ID: Unique identifier for the player's team.
+- TEAM_ABBREVIATION: Abbreviated name of the player's team.
+- GP: Total number of games played by the player in the season.
+- W: Total number of wins for the player's team in the season.
+- L: Total number of losses for the player's team in the season.
+- MIN: Average minutes played by the player per game.
+- TOUCHES: Average number of times the player has the ball.
+- ELBOW_TOUCHES: Average number of times the player receives the ball at the elbow.
+- ELBOW_TOUCH_FGM: Average field goals made by the player when receiving the ball
+    at the elbow.
+- ELBOW_TOUCH_FGA: Average field goals attempted by the player when receiving the
+    ball at the elbow.
+- ELBOW_TOUCH_FG_PCT: Average field goal percentage for shots taken at the elbow.
+- ELBOW_TOUCH_FTM: Average free throws made by the player when receiving the ball
+    at the elbow.
+- ELBOW_TOUCH_FTA: Average free throws attempted by the player when receiving the
+    ball at the elbow.
+- ELBOW_TOUCH_FT_PCT: Average free throw percentage for attempts made at the elbow.
+- ELBOW_TOUCH_PTS: Average points scored by the player when receiving the ball at
+    the elbow.
+- ELBOW_TOUCH_PASSES: Average number of passes made by the player when receiving the
+    ball at the elbow.
+- ELBOW_TOUCH_AST: Average assists made by the player when receiving the ball at the
+    elbow.
+- ELBOW_TOUCH_AST_PCT: Average assist percentage when the player receives the ball
+    at the elbow.
+- ELBOW_TOUCH_TOV: Average number of turnovers committed by the player when receiving
+    the ball at the elbow.
+- ELBOW_TOUCH_TOV_PCT: Average turnover percentage when the player receives the ball
+    at the elbow.
+- ELBOW_TOUCH_FOULS: Average number of fouls committed by the player when receiving
+    the ball at the elbow.
+- ELBOW_TOUCH_PASSES_PCT: Average percentage of successful passes made by the player
+    when receiving the ball at the elbow.
+- ELBOW_TOUCH_FOULS_PCT: Average percentage of fouls drawn by the player when receiving
+    the ball at the elbow.
+- ELBOW_TOUCH_PTS_PCT: Average percentage of points scored by the player when receiving
+    the ball at the elbow.
+- SEASON_ID: Unique identifier for the season of the statistics.
+ElbowTouch_team:
+- TEAM_ID: Unique identifier for each team.
+- TEAM_ABBREVIATION: Abbreviated name of the team.
+- TEAM_NAME: Full name of the team.
+- GP: Games played during the season.
+- W: Total wins by the team.
+- L: Total losses by the team.
+- MIN: Total minutes played by the team.
+- TOUCHES: Average number of touches for the team.
+- ELBOW_TOUCHES: Average number of touches specifically at the elbow.
+- ELBOW_TOUCH_FGM: Average number of field goals made from elbow touches.
+- ELBOW_TOUCH_FGA: Average number of field goals attempted from elbow touches.
+- ELBOW_TOUCH_FG_PCT: Field goal percentage from elbow touches.
+- ELBOW_TOUCH_FTM: Average number of free throws made from elbow touches.
+- ELBOW_TOUCH_FTA: Average number of free throws attempted from elbow touches.
+- ELBOW_TOUCH_FT_PCT: Free throw percentage from elbow touches.
+- ELBOW_TOUCH_PTS: Average points scored from elbow touches.
+- ELBOW_TOUCH_PASSES: Average number of passes made from the elbow.
+- ELBOW_TOUCH_AST: Average number of assists recorded from elbow touches.
+- ELBOW_TOUCH_AST_PCT: Percentage of elbow touches that result in assists.
+- ELBOW_TOUCH_TOV: Average number of turnovers from elbow touches.
+- ELBOW_TOUCH_TOV_PCT: Percentage of elbow touches that result in turnovers.
+- ELBOW_TOUCH_FOULS: Average number of fouls committed during elbow touches.
+- ELBOW_TOUCH_PASSES_PCT: Percentage of elbow touches that result in passes.
+- ELBOW_TOUCH_FOULS_PCT: Percentage of elbow touches that result in fouls.
+- ELBOW_TOUCH_PTS_PCT: Percentage of total team points that come from elbow touches.
+- SEASON_ID: Identifier for the specific season.
+Handoff_player:
+- SEASON_ID: The identifier for the season during which the stats were recorded.
+- PLAYER_ID: A unique identifier assigned to each player.
+- PLAYER_NAME: The name of the player.
+- TEAM_ID: A unique identifier for the team the player belongs to.
+- TEAM_ABBREVIATION: The abbreviated name of the team.
+- TEAM_NAME: The full name of the team.
+- PLAY_TYPE: The type of play being categorized, specifically dribble handoffs.
+- TYPE_GROUPING: The broader category under which the play type falls.
+- PERCENTILE: The statistical ranking of the player's performance compared to peers.
+- GP: Games Played; the total number of games the player participated in during the
+    season.
+- POSS_PCT: Possession Percentage; the percentage of total possessions accounted for
+    by the player.
+- PPP: Points Per Possession; the average points scored per possession.
+- FG_PCT: Field Goal Percentage; the percentage of field goals made.
+- FT_POSS_PCT: Free Throw Possession Percentage; the percentage of possessions resulting
+    in free throws.
+- TOV_POSS_PCT: Turnover Possession Percentage; the percentage of possessions that
+    resulted in a turnover.
+- SF_POSS_PCT: Scoring Foul Possession Percentage; the percentage of possessions that
+    resulted in a scoring foul.
+- PLUSONE_POSS_PCT: And-One Possession Percentage; the percentage of possessions that
+    resulted in an 'and-one' play.
+- SCORE_POSS_PCT: Scoring Possession Percentage; the percentage of possessions that
+    resulted in a score.
+- EFG_PCT: Effective Field Goal Percentage; a more accurate measure of shooting efficiency
+    that accounts for three-point shots.
+- POSS: Total Possessions; the total number of possessions the player was involved
+    in.
+- PTS: Total Points scored by the player during the season.
+- FGM: Field Goals Made; the total number of field goals made by the player.
+- FGA: Field Goals Attempted; the total number of field goals attempted by the player.
+- FGMX: Field Goals Made including additional context such as specific situations
+    or streaks.
+Handoff_team:
+- SEASON_ID: Identifier for the season being analyzed.
+- TEAM_ID: Unique identifier for each team.
+- TEAM_ABBREVIATION: Abbreviated name of the team.
+- TEAM_NAME: Full name of the team.
+- PLAY_TYPE: Specific type of play, in this case, a dribble handoff.
+- TYPE_GROUPING: Categorization of the play type for analysis.
+- PERCENTILE: Statistical rank of the team's performance relative to other teams.
+- GP: Games played by the team using dribble handoff.
+- POSS_PCT: Percentage of possessions resulting from dribble handoff plays.
+- PPP: Points per possession on dribble handoff plays.
+- FG_PCT: Field goal percentage on dribble handoff plays.
+- FT_POSS_PCT: Percentage of possessions resulting in free throw opportunities.
+- TOV_POSS_PCT: Percentage of possessions ending in turnovers.
+- SF_POSS_PCT: Percentage of possessions resulting in second-chance opportunities.
+- PLUSONE_POSS_PCT: Percentage of possessions resulting in an and-one situation.
+- SCORE_POSS_PCT: Percentage of possessions resulting in points scored.
+- EFG_PCT: Effective field goal percentage on dribble handoff plays.
+- POSS: Total number of possessions using dribble handoff.
+- PTS: Total points scored from dribble handoff plays.
+- FGM: Total field goals made from dribble handoff plays.
+- FGA: Total field goals attempted from dribble handoff plays.
+- FGMX: Total field goals made specifically on extended dribble handoff plays.
+Isolation_player:
+- SEASON_ID: The identifier for the NBA season, typically represented in the format
+    YYYY-YY.
+- PLAYER_ID: A unique identifier for each player in the database.
+- PLAYER_NAME: The name of the player associated with the statistics.
+- TEAM_ID: A unique identifier for the team the player is affiliated with.
+- TEAM_ABBREVIATION: The abbreviated name of the team (e.g., LAL for Los Angeles Lakers).
+- TEAM_NAME: The full name of the team the player belongs to.
+- PLAY_TYPE: The type of play being analyzed, specifically isolation plays in this
+    context.
+- TYPE_GROUPING: A broader classification of play types to which isolation plays belong.
+- PERCENTILE: The player's performance ranking expressed as a percentile compared
+    to others.
+- GP: Games Played; the number of games in which the player participated.
+- POSS_PCT: Percentage of total possessions that were isolation plays for the player.
+- PPP: Points Per Possession; the average points scored per isolation possession.
+- FG_PCT: Field Goal Percentage; the percentage of field goals made in isolation plays.
+- FT_POSS_PCT: Free Throw Possession Percentage; the percentage of possessions resulting
+    in free throws.
+- TOV_POSS_PCT: Turnover Possession Percentage; the percentage of possessions resulting
+    in turnovers.
+- SF_POSS_PCT: Shooting Foul Possession Percentage; the percentage of possessions
+    that drew shooting fouls.
+- PLUSONE_POSS_PCT: And-One Possession Percentage; the percentage of possessions resulting
+    in an And-One.
+- SCORE_POSS_PCT: Scoring Possession Percentage; the percentage of possessions that
+    resulted in a score.
+- EFG_PCT: Effective Field Goal Percentage; a modified field goal percentage that
+    accounts for the added value of three-point shots.
+- POSS: Total possessions in which the player was involved in isolation plays.
+- PTS: Total points scored by the player in isolation plays.
+- FGM: Field Goals Made; the total number of field goals made in isolation plays.
+- FGA: Field Goals Attempted; the total number of field goals attempted in isolation
+    plays.
+- FGMX: Field Goals Made with extra time; field goals made in isolation situations
+    that include additional time or possessions.
+Isolation_team:
+- SEASON_ID: Unique identifier for the season, typically formatted as 'YYYY-YY'.
+- TEAM_ID: Unique identifier assigned to each team in the league.
+- TEAM_ABBREVIATION: Shortened form of the team's name, usually 2-4 letters.
+- TEAM_NAME: Full name of the team.
+- PLAY_TYPE: Specific type of play being analyzed, in this case, isolation plays.
+- TYPE_GROUPING: Categorization of play types into broader groups for analysis.
+- PERCENTILE: Statistical measure representing the team's performance relative to
+    others, expressed as a percentile.
+- GP: Total number of games played by the team during the season for this metric.
+- POSS_PCT: Percentage of team possessions that were isolation plays.
+- PPP: Points per possession; average points scored per isolation possession.
+- FG_PCT: Field goal percentage on isolation plays, calculated as FGM/FGA.
+- FT_POSS_PCT: Percentage of isolation possessions that resulted in free throw attempts.
+- TOV_POSS_PCT: Percentage of isolation possessions that ended in turnovers.
+- SF_POSS_PCT: Percentage of isolation possessions that resulted in second chance
+    opportunities.
+- PLUSONE_POSS_PCT: Percentage of isolation possessions that resulted in an and-one
+    situation (scoring a basket while being fouled).
+- SCORE_POSS_PCT: Percentage of isolation possessions that resulted in points being
+    scored.
+- EFG_PCT: Effective field goal percentage, which accounts for the added value of
+    three-point field goals.
+- POSS: Total number of isolation possessions for the team.
+- PTS: Total points scored during isolation plays.
+- FGM: Total field goals made during isolation plays.
+- FGA: Total field goals attempted during isolation plays.
+- FGMX: Additional metric related to field goals, potentially indicating field goal
+    efficiency or effectiveness in isolation.
+Misc_player:
+- SEASON_ID: Unique identifier for the season in which the stats were recorded.
+- PLAYER_ID: Unique identifier for each player.
+- PLAYER_NAME: Full name of the player.
+- TEAM_ID: Unique identifier for the team the player is associated with.
+- TEAM_ABBREVIATION: Abbreviated name of the team.
+- TEAM_NAME: Full name of the team.
+- PLAY_TYPE: Type of play or situation for the statistics recorded.
+- TYPE_GROUPING: Categorization of the play type.
+- PERCENTILE: Percentile rank of the player's performance compared to all players.
+- GP: Games Played by the player during the season.
+- POSS_PCT: Percentage of total possessions utilized by the player.
+- PPP: Points per possession, measuring scoring efficiency.
+- FG_PCT: Field Goal Percentage, representing the ratio of successful field goals
+    to attempts.
+- FT_POSS_PCT: Free Throw Possessions Percentage, indicating the rate of possessions
+    that ended in free throws.
+- TOV_POSS_PCT: Turnover Possessions Percentage, the percentage of possessions that
+    ended in turnovers.
+- SF_POSS_PCT: Shooting Foul Possessions Percentage, percentage of possessions ending
+    in shooting fouls.
+- PLUSONE_POSS_PCT: Plus One Possessions Percentage, indicating possessions resulting
+    in a made basket and a foul.
+- SCORE_POSS_PCT: Score Possessions Percentage, the percentage of possessions that
+    resulted in points.
+- EFG_PCT: Effective Field Goal Percentage, which accounts for three-point field goals
+    being worth more.
+- POSS: Total possessions utilized by the player.
+- PTS: Total points scored by the player.
+- FGM: Field Goals Made by the player.
+- FGA: Field Goals Attempted by the player.
+- FGMX: Field Goals Made with extra conditions or modifiers applied.
+Misc_team:
+- SEASON_ID: The unique identifier for the season in which the stats were recorded.
+- TEAM_ID: The unique identifier for the team.
+- TEAM_ABBREVIATION: The abbreviated name of the team.
+- TEAM_NAME: The full name of the team.
+- PLAY_TYPE: The type of play (e.g., possession type) for which stats are measured.
+- TYPE_GROUPING: The classification of the play types into broader categories.
+- PERCENTILE: The ranking of the team's performance relative to other teams.
+- GP: The number of games played by the team.
+- POSS_PCT: The percentage of possessions for this team.
+- PPP: Points per possession, a measure of scoring efficiency.
+- FG_PCT: Field goal percentage, the ratio of successful field goals to attempts.
+- FT_POSS_PCT: The percentage of possessions that resulted in free throw attempts.
+- TOV_POSS_PCT: The percentage of possessions that ended in a turnover.
+- SF_POSS_PCT: The percentage of possessions that resulted in a shooting foul.
+- PLUSONE_POSS_PCT: The percentage of possessions that resulted in a successful 'and-one'
+    free throw opportunity.
+- SCORE_POSS_PCT: The percentage of possessions that resulted in a score.
+- EFG_PCT: Effective field goal percentage, which accounts for the value of three-point
+    shots.
+- POSS: Total number of possessions for the team.
+- PTS: Total points scored by the team.
+- FGM: Total field goals made by the team.
+- FGA: Total field goals attempted by the team.
+- FGMX: Additional metric related to field goals made, possibly adjusted for specific
+    contexts.
+OffRebound_player:
+- SEASON_ID: A unique identifier for the season in which the statistics were recorded.
+- PLAYER_ID: A unique identifier for the player.
+- PLAYER_NAME: The name of the player.
+- TEAM_ID: A unique identifier for the team the player is associated with.
+- TEAM_ABBREVIATION: The abbreviation for the team name.
+- TEAM_NAME: The full name of the team.
+- PLAY_TYPE: The type of play associated with the offensive rebound.
+- TYPE_GROUPING: A categorization of the play type.
+- PERCENTILE: The percentile rank of the player's statistics compared to all players.
+- GP: Games played by the player in the season.
+- POSS_PCT: Percentage of possessions that result in a specific outcome.
+- PPP: Points per possession, indicating the efficiency of scoring.
+- FG_PCT: Field goal percentage, representing successful field goals out of attempts.
+- FT_POSS_PCT: Percentage of possessions that result in free throw attempts.
+- TOV_POSS_PCT: Percentage of possessions that result in turnovers.
+- SF_POSS_PCT: Percentage of possessions that result in second chance points.
+- PLUSONE_POSS_PCT: Percentage of possessions that result in an and-one situation.
+- SCORE_POSS_PCT: Percentage of possessions that result in a score.
+- EFG_PCT: Effective field goal percentage, adjusted for three-point shooting.
+- POSS: Total possessions during the season.
+- PTS: Total points scored during the season.
+- FGM: Total field goals made during the season.
+- FGA: Total field goals attempted during the season.
+- FGMX: Total field goals made beyond the three-point line during the season.
+OffRebound_team:
+- SEASON_ID: Unique identifier for the season (e.g., 2022-2023).
+- TEAM_ID: Unique identifier for the team.
+- TEAM_ABBREVIATION: Three-letter abbreviation for the team's name (e.g., LAL for
+    Los Angeles Lakers).
+- TEAM_NAME: Full name of the team.
+- PLAY_TYPE: Type of offensive play executed following an offensive rebound.
+- TYPE_GROUPING: Categorization of play types into broader groups.
+- PERCENTILE: Statistical ranking of the team's performance relative to others in
+    the same category.
+- GP: Games played by the team during the season.
+- POSS_PCT: Percentage of possessions that resulted from offensive rebounds.
+- PPP: Points per possession; measures scoring efficiency.
+- FG_PCT: Field goal percentage; ratio of field goals made to attempts.
+- FT_POSS_PCT: Percentage of possessions that resulted in free throw attempts.
+- TOV_POSS_PCT: Percentage of possessions that resulted in turnovers.
+- SF_POSS_PCT: Percentage of possessions that involved a scored field goal or free
+    throw.
+- PLUSONE_POSS_PCT: Percentage of possessions that resulted in a 'and-one' scoring
+    opportunity.
+- SCORE_POSS_PCT: Percentage of possessions that resulted in successful scoring.
+- EFG_PCT: Effective field goal percentage; adjusts field goal percentage to account
+    for three-pointers.
+- POSS: Total number of possessions involving offensive rebounds.
+- PTS: Total points scored from offensive rebound situations.
+- FGM: Total field goals made from offensive rebound situations.
+- FGA: Total field goals attempted from offensive rebound situations.
+- FGMX: Total field goals made with additional metrics or context (if applicable).
+OffScreen_player:
+- SEASON_ID: Identifies the NBA season for the statistics (e.g., 2021-22).
+- PLAYER_ID: Unique identifier for each player.
+- PLAYER_NAME: Full name of the player.
+- TEAM_ID: Unique identifier for the team the player belongs to.
+- TEAM_ABBREVIATION: Abbreviation for the team name (e.g., LAL for Los Angeles Lakers).
+- TEAM_NAME: Full name of the team.
+- PLAY_TYPE: Type of play (e.g., off-screen).
+- TYPE_GROUPING: Grouping of play types for statistical analysis.
+- PERCENTILE: Statistical ranking of the player's performance in comparison to peers.
+- GP: Games played in the season for this statistic.
+- POSS_PCT: Percentage of plays that resulted in a possession for the player.
+- PPP: Points per possession, measuring scoring efficiency.
+- FG_PCT: Field goal percentage, calculated as field goals made divided by field goals
+    attempted.
+- FT_POSS_PCT: Percentage of possessions that ended with a free throw.
+- TOV_POSS_PCT: Percentage of possessions that resulted in turnovers.
+- SF_POSS_PCT: Percentage of possessions that resulted in a scored field goal.
+- PLUSONE_POSS_PCT: Percentage of possessions resulting in a basket and a free throw
+    attempt.
+- SCORE_POSS_PCT: Percentage of possessions that resulted in a score.
+- EFG_PCT: Effective field goal percentage, accounting for the value of three-point
+    shooting.
+- POSS: Total number of possessions used by the player.
+- PTS: Total points scored by the player.
+- FGM: Total field goals made by the player.
+- FGA: Total field goals attempted by the player.
+- FGMX: A metric indicating field goals made, possibly in specific game contexts.
+OffScreen_team:
+- SEASON_ID: Identifier for the NBA season.
+- TEAM_ID: Unique identifier for the team.
+- TEAM_ABBREVIATION: Abbreviated name of the team.
+- TEAM_NAME: Full name of the team.
+- PLAY_TYPE: Type of play executed, in this case, coming off a screen.
+- TYPE_GROUPING: Categorization of the play type.
+- PERCENTILE: Ranking of the team's performance relative to other teams, expressed
+    as a percentile.
+- GP: Games played; total number of games tracked for the statistics.
+- POSS_PCT: Percentage of possessions coming off a screen.
+- PPP: Points per possession for plays initiated off a screen.
+- FG_PCT: Field goal percentage for shots taken off a screen.
+- FT_POSS_PCT: Percentage of possessions resulting in free throws after coming off
+    a screen.
+- TOV_POSS_PCT: Percentage of possessions that resulted in turnovers after coming
+    off a screen.
+- SF_POSS_PCT: Percentage of possessions that resulted in second-chance points after
+    coming off a screen.
+- PLUSONE_POSS_PCT: Percentage of possessions resulting in an 'and-one' situation
+    after coming off a screen.
+- SCORE_POSS_PCT: Percentage of possessions that resulted in points scored after coming
+    off a screen.
+- EFG_PCT: Effective field goal percentage, adjusted for three-point field goals,
+    for shots taken off a screen.
+- POSS: Total number of possessions coming off a screen.
+- PTS: Total points scored from possessions that came off a screen.
+- FGM: Field goals made from possessions that came off a screen.
+- FGA: Field goals attempted from possessions that came off a screen.
+- FGMX: Field goals made excluding missed attempts from possessions that came off
+    a screen.
+PRBallHandler_player:
+- SEASON_ID: Represents the unique identifier for a specific NBA season.
+- PLAYER_ID: Unique identifier for each player in the dataset.
+- PLAYER_NAME: The name of the player.
+- TEAM_ID: Unique identifier of the team the player is associated with.
+- TEAM_ABBREVIATION: Abbreviation of the team's name.
+- TEAM_NAME: Full name of the team.
+- PLAY_TYPE: The type of play situation, in this case, pick and roll.
+- TYPE_GROUPING: Categorization of play types into broader groups.
+- PERCENTILE: Indicates the player's performance rank relative to all players, expressed
+    as a percentile.
+- GP: Games Played - the number of games in which the player participated in pick
+    and roll situations.
+- POSS_PCT: Percentage of total plays that were classified as pick and roll when the
+    player was handling the ball.
+- PPP: Points Per Possession - average points scored per possession while in pick
+    and roll situations.
+- FG_PCT: Field Goal Percentage - percentage of field goals made while handling the
+    ball in pick and roll situations.
+- FT_POSS_PCT: Percentage of possessions that ended in free throw attempts.
+- TOV_POSS_PCT: Percentage of possessions that resulted in turnovers.
+- SF_POSS_PCT: Percentage of possessions that resulted in second chance points.
+- PLUSONE_POSS_PCT: Percentage of possessions that resulted in an and-one situation.
+- SCORE_POSS_PCT: Percentage of possessions that resulted in points scored.
+- EFG_PCT: Effective Field Goal Percentage - a version of field goal percentage that
+    accounts for the additional value of three-point shots.
+- POSS: Total number of possessions in which the player was the ball handler during
+    pick and roll situations.
+- PTS: Total points scored by the player during pick and roll possessions.
+- FGM: Total field goals made by the player in pick and roll situations.
+- FGA: Total field goals attempted by the player in pick and roll situations.
+- FGMX: Total field goals made from a specific range or type, as defined within the
+    dataset.
+PRBallHandler_team:
+- SEASON_ID: The unique identifier for the NBA season.
+- TEAM_ID: The unique identifier for the team.
+- TEAM_ABBREVIATION: The abbreviated name of the team (e.g., LAL for Los Angeles Lakers).
+- TEAM_NAME: The full name of the team.
+- PLAY_TYPE: The type of play being analyzed, specifically focusing on pick and roll
+    situations.
+- TYPE_GROUPING: Grouping of the play types, used for categorizing various plays.
+- PERCENTILE: The percentile ranking of the team's performance compared to all teams
+    in the same category.
+- GP: Games Played, the total number of games in which the team was involved in pick
+    and roll situations.
+- POSS_PCT: Possession Percentage, the percentage of total possessions that are pick
+    and roll plays.
+- PPP: Points Per Possession, the average points scored per pick and roll possession.
+- FG_PCT: Field Goal Percentage, the percentage of successful field goals made during
+    pick and roll situations.
+- FT_POSS_PCT: Free Throw Possession Percentage, the percentage of pick and roll possessions
+    that resulted in free throw attempts.
+- TOV_POSS_PCT: Turnover Possession Percentage, the percentage of pick and roll possessions
+    that ended in a turnover.
+- SF_POSS_PCT: Second Chance Possession Percentage, the percentage of pick and roll
+    possessions that resulted in second chance points.
+- PLUSONE_POSS_PCT: And-One Possession Percentage, the percentage of pick and roll
+    possessions resulting in an 'and-one' situation.
+- SCORE_POSS_PCT: Scoring Possession Percentage, the percentage of pick and roll possessions
+    that resulted in a score.
+- EFG_PCT: Effective Field Goal Percentage, a modified field goal percentage that
+    takes into account the value of three-point shots.
+- POSS: Total Possessions, the total number of pick and roll possessions.
+- PTS: Total Points, the total points scored directly from pick and roll possessions.
+- FGM: Field Goals Made, the total number of field goals converted during pick and
+    roll plays.
+- FGA: Field Goals Attempted, the total number of field goal attempts during pick
+    and roll situations.
+- FGMX: Field Goals Made excluding certain factors, providing an adjusted count for
+    analysis.
+PRRollman_player:
+- SEASON_ID: The unique identifier for the NBA season; typically formatted as YYYY-YY.
+- PLAYER_ID: The unique identifier assigned to each player in the league.
+- PLAYER_NAME: The name of the player.
+- TEAM_ID: The unique identifier for the player's team.
+- TEAM_ABBREVIATION: The abbreviated code representing the team (e.g., LAL for Los
+    Angeles Lakers).
+- TEAM_NAME: The full name of the team.
+- PLAY_TYPE: The type of play situation; in this context, relates to the pick and
+    roll role.
+- TYPE_GROUPING: Categorization of play types, potentially grouping similar plays.
+- PERCENTILE: The player's rank percentile compared to all players in a specific metric.
+- GP: Games Played; the total number of games the player participated in during the
+    season.
+- POSS_PCT: Possession Percentage; indicates the percentage of team possessions used
+    by the player.
+- PPP: Points Per Possession; reflects the average points scored by the player per
+    possession.
+- FG_PCT: Field Goal Percentage; the ratio of field goals made to field goal attempts.
+- FT_POSS_PCT: Free Throw Possession Percentage; the percentage of possessions that
+    resulted in free throw attempts.
+- TOV_POSS_PCT: Turnover Possession Percentage; the percentage of possessions that
+    ended in a turnover.
+- SF_POSS_PCT: Shooting Foul Possession Percentage; the percentage of possessions
+    that resulted in a shooting foul.
+- PLUSONE_POSS_PCT: And-One Possession Percentage; the percentage of possessions where
+    the player scored while being fouled.
+- SCORE_POSS_PCT: Scoring Possession Percentage; the percentage of possessions in
+    which the player scores.
+- EFG_PCT: Effective Field Goal Percentage; accounts for the added value of three-point
+    field goals.
+- POSS: Total possessions during the season in pick and roll situations as the rollman.
+- PTS: Total points scored by the player in pick and roll situations as the rollman.
+- FGM: Total field goals made by the player in applicable situations.
+- FGA: Total field goals attempted by the player in applicable situations.
+- FGMX: Total field goals made in situations where the player was a rollman.
+PRRollman_team:
+- SEASON_ID: Identifier for the NBA season.
+- TEAM_ID: Unique identifier for the team.
+- TEAM_ABBREVIATION: Abbreviated name of the team.
+- TEAM_NAME: Full name of the team.
+- PLAY_TYPE: Type of play situation being analyzed (e.g., pick and roll).
+- TYPE_GROUPING: Category grouping of the play type (e.g., offensive, defensive).
+- PERCENTILE: Rank of performance relative to league averages, expressed as a percentile.
+- GP: Number of games played in the given situation.
+- POSS_PCT: Percentage of total possessions that involved this play type.
+- PPP: Points per possession in this play type situation.
+- FG_PCT: Field goal percentage when executing this play type.
+- FT_POSS_PCT: Percentage of free throw opportunities generated from this play type.
+- TOV_POSS_PCT: Percentage of possessions that resulted in turnovers while executing
+    this play type.
+- SF_POSS_PCT: Percentage of possessions that generated second chance opportunities.
+- PLUSONE_POSS_PCT: Percentage of possessions that resulted in a plus one (foul and
+    score).
+- SCORE_POSS_PCT: Percentage of possessions that resulted in a score.
+- EFG_PCT: Effective field goal percentage, which adjusts for three-point field goals.
+- POSS: Total number of possessions analyzed for this metric.
+- PTS: Total points scored during the analyzed possessions.
+- FGM: Total field goals made in the analyzed possessions.
+- FGA: Total field goals attempted in the analyzed possessions.
+- FGMX: Total field goals made from beyond the arc in the analyzed possessions.
+PaintTouch_player:
+- PLAYER_ID: Unique identifier for the player.
+- PLAYER_NAME: Name of the player.
+- TEAM_ID: Unique identifier for the team.
+- TEAM_ABBREVIATION: Abbreviated name of the team.
+- GP: Total games played by the player in the season.
+- W: Total wins by the player's team.
+- L: Total losses by the player's team.
+- MIN: Average minutes played per game.
+- TOUCHES: Total number of times the player touched the ball.
+- PAINT_TOUCHES: Total number of times the player touched the ball in the paint.
+- PAINT_TOUCH_FGM: Total field goals made by the player from the paint.
+- PAINT_TOUCH_FGA: Total field goals attempted by the player from the paint.
+- PAINT_TOUCH_FG_PCT: Field goal percentage of the player from the paint.
+- PAINT_TOUCH_FTM: Total free throws made by the player from the paint.
+- PAINT_TOUCH_FTA: Total free throws attempted by the player from the paint.
+- PAINT_TOUCH_FT_PCT: Free throw percentage of the player from the paint.
+- PAINT_TOUCH_PTS: Total points scored by the player from the paint.
+- PAINT_TOUCH_PTS_PCT: Percentage of total points scored by the player that came from
+    the paint.
+- PAINT_TOUCH_PASSES: Total passes made by the player while in the paint.
+- PAINT_TOUCH_PASSES_PCT: Percentage of total touches that were passes while in the
+    paint.
+- PAINT_TOUCH_AST: Total assists made by the player while in the paint.
+- PAINT_TOUCH_AST_PCT: Percentage of total touches that resulted in assists while
+    in the paint.
+- PAINT_TOUCH_TOV: Total turnovers committed by the player while in the paint.
+- PAINT_TOUCH_TOV_PCT: Percentage of total touches that resulted in turnovers while
+    in the paint.
+- PAINT_TOUCH_FOULS: Total fouls committed by the player while in the paint.
+- PAINT_TOUCH_FOULS_PCT: Percentage of total touches that resulted in fouls committed
+    while in the paint.
+- SEASON_ID: Unique identifier for the season.
+PaintTouch_team:
+- TEAM_ID: Unique identifier for the team.
+- TEAM_ABBREVIATION: Abbreviated name of the team.
+- TEAM_NAME: Full name of the team.
+- GP: Total number of games played by the team in the season.
+- W: Total number of wins by the team in the season.
+- L: Total number of losses by the team in the season.
+- MIN: Average minutes played by the team in games.
+- TOUCHES: Average number of times the team touches the basketball.
+- PAINT_TOUCHES: Average times the team touches the ball in the paint area.
+- PAINT_TOUCH_FGM: Average number of field goals made by the team from paint touches.
+- PAINT_TOUCH_FGA: Average number of field goal attempts by the team from paint touches.
+- PAINT_TOUCH_FG_PCT: Average field goal percentage for shots taken from paint touches.
+- PAINT_TOUCH_FTM: Average number of free throws made by the team from paint touches.
+- PAINT_TOUCH_FTA: Average number of free throw attempts by the team from paint touches.
+- PAINT_TOUCH_FT_PCT: Average free throw percentage for shots taken from paint touches.
+- PAINT_TOUCH_PTS: Average points scored by the team from paint touches.
+- PAINT_TOUCH_PTS_PCT: Average percentage of total team points scored from paint touches.
+- PAINT_TOUCH_PASSES: Average number of passes made by the team during paint touches.
+- PAINT_TOUCH_PASSES_PCT: Average percentage of total touches that were passes during
+    paint touches.
+- PAINT_TOUCH_AST: Average assists made by the team during paint touches.
+- PAINT_TOUCH_AST_PCT: Average percentage of total touches that resulted in assists
+    during paint touches.
+- PAINT_TOUCH_TOV: Average number of turnovers committed by the team during paint
+    touches.
+- PAINT_TOUCH_TOV_PCT: Average percentage of total touches that resulted in turnovers
+    during paint touches.
+- PAINT_TOUCH_FOULS: Average number of fouls drawn by the team during paint touches.
+- PAINT_TOUCH_FOULS_PCT: Average percentage of total touches that resulted in fouls
+    drawn during paint touches.
+- SEASON_ID: Unique identifier for the season being analyzed.
+Passing_player:
+- PLAYER_ID: A unique identifier for each player.
+- PLAYER_NAME: The name of the player.
+- TEAM_ID: A unique identifier for the team that the player plays for.
+- TEAM_ABBREVIATION: The abbreviated name of the team.
+- GP: Games played by the player in the season.
+- W: Total wins for the team in games played by the player.
+- L: Total losses for the team in games played by the player.
+- MIN: Average minutes played by the player per game.
+- PASSES_MADE: Average number of passes made by the player per game.
+- PASSES_RECEIVED: Average number of passes received by the player per game.
+- AST: Average assists made by the player per game.
+- FT_AST: Average assists that led to free throw opportunities per game.
+- SECONDARY_AST: Average secondary assists per game.
+- POTENTIAL_AST: Average potential assists per game.
+- AST_POINTS_CREATED: Average points created from assists by the player per game.
+- AST_ADJ: Adjusted average assists considering various factors.
+- AST_TO_PASS_PCT: Percentage of passes that resulted in assists.
+- AST_TO_PASS_PCT_ADJ: Adjusted percentage of passes that resulted in assists.
+- SEASON_ID: A unique identifier for the season in which the statistics were recorded.
+Passing_team:
+- TEAM_ID: A unique identifier for each team.
+- TEAM_ABBREVIATION: The abbreviated name of the team (e.g., LAL for Los Angeles Lakers).
+- TEAM_NAME: The full name of the team.
+- GP: Games Played - the total number of games the team has played in the season.
+- W: Wins - the total number of games won by the team.
+- L: Losses - the total number of games lost by the team.
+- MIN: Minutes - the average minutes played by the team per game.
+- PASSES_MADE: The total number of passes made by the team.
+- PASSES_RECEIVED: The total number of passes received by the team.
+- AST: Assists - the total number of assists made by the team.
+- FT_AST: First Tallied Assists - assists that directly led to a made basket.
+- SECONDARY_AST: Secondary Assists - assists that led to a first assist.
+- POTENTIAL_AST: Potential Assists - passes that could have led to assists if a shot
+    was made.
+- AST_POINTS_CREATED: Total points scored from assists made by the team.
+- AST_ADJ: Adjusted Assists - assists counted with adjustments for certain plays.
+- AST_TO_PASS_PCT: Percentage of passes that resulted in assists.
+- AST_TO_PASS_PCT_ADJ: Adjusted percentage of passes that resulted in assists after
+    accounting for certain factors.
+- SEASON_ID: A unique identifier for the respective season.
+Possessions_player:
+- PLAYER_ID: Unique identifier for the player.
+- PLAYER_NAME: Full name of the player.
+- TEAM_ID: Unique identifier for the team the player belongs to.
+- TEAM_ABBREVIATION: Abbreviated name of the team.
+- GP: Total number of games played by the player in the season.
+- W: Total number of games won by the player's team in the season.
+- L: Total number of games lost by the player's team in the season.
+- MIN: Total minutes played by the player in the season.
+- POINTS: Total points scored by the player in the season.
+- TOUCHES: Total number of times the player touched the ball during the season.
+- FRONT_CT_TOUCHES: Total number of times the player touched the ball in the front
+    court.
+- TIME_OF_POSS: Total time (in seconds) the player possessed the ball during the season.
+- AVG_SEC_PER_TOUCH: Average seconds spent per touch of the ball.
+- AVG_DRIB_PER_TOUCH: Average number of dribbles taken per touch.
+- PTS_PER_TOUCH: Average points scored per touch of the ball.
+- ELBOW_TOUCHES: Total number of times the player touched the ball at the elbow area.
+- POST_TOUCHES: Total number of times the player touched the ball in the post area.
+- PAINT_TOUCHES: Total number of times the player touched the ball in the paint.
+- PTS_PER_ELBOW_TOUCH: Average points scored per touch at the elbow.
+- PTS_PER_POST_TOUCH: Average points scored per touch in the post.
+- PTS_PER_PAINT_TOUCH: Average points scored per touch in the paint.
+- SEASON_ID: Unique identifier for the season.
+Possessions_team:
+- TEAM_ID: Unique identifier for the team.
+- TEAM_ABBREVIATION: Short form or code representing the team's name.
+- TEAM_NAME: Full name of the team.
+- GP: Total number of games played in the season.
+- W: Total number of wins in the season.
+- L: Total number of losses in the season.
+- MIN: Total minutes played by the team during the season.
+- POINTS: Total points scored by the team in the season.
+- TOUCHES: Total number of times the team touched the ball.
+- FRONT_CT_TOUCHES: Number of ball touches by the team in the front court.
+- TIME_OF_POSS: Total time the team possessed the ball.
+- AVG_SEC_PER_TOUCH: Average seconds the team held the ball per touch.
+- AVG_DRIB_PER_TOUCH: Average dribbles taken per touch of the ball.
+- PTS_PER_TOUCH: Average points scored per touch of the ball.
+- ELBOW_TOUCHES: Total touches made by the team from the elbow area.
+- POST_TOUCHES: Total touches made by the team from the post area.
+- PAINT_TOUCHES: Total touches made by the team in the paint area.
+- PTS_PER_ELBOW_TOUCH: Average points scored per elbow touch.
+- PTS_PER_POST_TOUCH: Average points scored per post touch.
+- PTS_PER_PAINT_TOUCH: Average points scored per paint touch.
+- SEASON_ID: Identifier for the specific season of the statistics.
+PostTouch_player:
+- PLAYER_ID: The unique identifier for each player.
+- PLAYER_NAME: The name of the player.
+- TEAM_ID: The unique identifier for the player's team.
+- TEAM_ABBREVIATION: The abbreviated name of the player's team.
+- GP: The total number of games played by the player in the season.
+- W: The number of games won by the player's team in the season.
+- L: The number of games lost by the player's team in the season.
+- MIN: The average minutes played by the player per game.
+- TOUCHES: The average number of times the player touches the ball in games.
+- POST_TOUCHES: The average number of times the player touches the ball in the post
+    during games.
+- POST_TOUCH_FGM: The average number of field goals made by the player during post
+    touches.
+- POST_TOUCH_FGA: The average number of field goals attempted by the player during
+    post touches.
+- POST_TOUCH_FG_PCT: The average field goal percentage of the player during post touches.
+- POST_TOUCH_FTM: The average number of free throws made by the player during post
+    touches.
+- POST_TOUCH_FTA: The average number of free throws attempted by the player during
+    post touches.
+- POST_TOUCH_FT_PCT: The average free throw percentage of the player during post touches.
+- POST_TOUCH_PTS: The average points scored by the player during post touches.
+- POST_TOUCH_PTS_PCT: The average percentage of total points scored by the player
+    that come from post touches.
+- POST_TOUCH_PASSES: The average number of passes made by the player during post touches.
+- POST_TOUCH_PASSES_PCT: The average percentage of total passes made by the player
+    that occur during post touches.
+- POST_TOUCH_AST: The average number of assists made by the player during post touches.
+- POST_TOUCH_AST_PCT: The average percentage of total assists made by the player that
+    occur during post touches.
+- POST_TOUCH_TOV: The average number of turnovers committed by the player during post
+    touches.
+- POST_TOUCH_TOV_PCT: The average percentage of total turnovers committed by the player
+    that occur during post touches.
+- POST_TOUCH_FOULS: The average number of fouls committed by the player during post
+    touches.
+- POST_TOUCH_FOULS_PCT: The average percentage of total fouls committed by the player
+    that occur during post touches.
+- SEASON_ID: The unique identifier for the season.
+PostTouch_team:
+- TEAM_ID: Unique identifier for the team.
+- TEAM_ABBREVIATION: Abbreviated name of the team.
+- TEAM_NAME: Full name of the team.
+- GP: Games Played by the team in the season.
+- W: Total Wins by the team in the season.
+- L: Total Losses by the team in the season.
+- MIN: Average minutes played by the team during the season.
+- TOUCHES: Average total number of ball touches by the team in the post.
+- POST_TOUCHES: Average number of touches the team has in the post.
+- POST_TOUCH_FGM: Average number of field goals made from post touches.
+- POST_TOUCH_FGA: Average number of field goals attempted from post touches.
+- POST_TOUCH_FG_PCT: Average field goal percentage from post touches.
+- POST_TOUCH_FTM: Average number of free throws made from post touches.
+- POST_TOUCH_FTA: Average number of free throws attempted from post touches.
+- POST_TOUCH_FT_PCT: Average free throw percentage from post touches.
+- POST_TOUCH_PTS: Average points scored from post touches.
+- POST_TOUCH_PTS_PCT: Percentage of total points scored from post touches.
+- POST_TOUCH_PASSES: Average number of passes made from post touches.
+- POST_TOUCH_PASSES_PCT: Percentage of total passes that came from post touches.
+- POST_TOUCH_AST: Average assists recorded from post touches.
+- POST_TOUCH_AST_PCT: Percentage of total assists that came from post touches.
+- POST_TOUCH_TOV: Average turnovers committed during post touches.
+- POST_TOUCH_TOV_PCT: Percentage of total turnovers that occurred during post touches.
+- POST_TOUCH_FOULS: Average number of fouls committed during post touches.
+- POST_TOUCH_FOULS_PCT: Percentage of total fouls committed that occurred during post
+    touches.
+- SEASON_ID: Unique identifier for the season.
+Postup_player:
+- SEASON_ID: The unique identifier for the season in which the statistics were recorded.
+- PLAYER_ID: The unique identifier for the player.
+- PLAYER_NAME: The full name of the player.
+- TEAM_ID: The unique identifier for the team the player represents.
+- TEAM_ABBREVIATION: The abbreviated name of the team (e.g., LAL for Los Angeles Lakers).
+- TEAM_NAME: The full name of the team.
+- PLAY_TYPE: The type of play situation (e.g., Postup).
+- TYPE_GROUPING: A categorization of the play type for analysis purposes.
+- PERCENTILE: The player's performance ranking compared to others in this play type,
+    expressed as a percentile.
+- GP: Games Played - the number of games involved in this statistic.
+- POSS_PCT: Possession Percentage - the proportion of team possessions that resulted
+    in this play type.
+- PPP: Points Per Possession - the average number of points scored per possession.
+- FG_PCT: Field Goal Percentage - the percentage of field goal attempts that were
+    successful.
+- FT_POSS_PCT: Free Throw Possession Percentage - the percentage of possessions that
+    resulted in free throw attempts.
+- TOV_POSS_PCT: Turnover Possession Percentage - the percentage of possessions that
+    resulted in turnovers.
+- SF_POSS_PCT: Shooting Foul Possession Percentage - the percentage of possessions
+    that resulted in shooting fouls.
+- PLUSONE_POSS_PCT: And-One Possession Percentage - the percentage of possessions
+    that resulted in an and-one situation.
+- SCORE_POSS_PCT: Scoring Possession Percentage - the percentage of possessions that
+    resulted in points scored.
+- EFG_PCT: Effective Field Goal Percentage - a measure of shooting efficiency that
+    accounts for three-point field goals.
+- POSS: Possessions - the total number of possessions for this play type.
+- PTS: Points - the total number of points scored while in this play type.
+- FGM: Field Goals Made - the total number of successful field goal attempts.
+- FGA: Field Goals Attempted - the total number of field goal attempts.
+- FGMX: Field Goals Made per 100 possessions - the average number of field goals made
+    per 100 possession metrics.
+Postup_team:
+- SEASON_ID: The identifier for the season, representing the year of the season.
+- TEAM_ID: The unique identifier for the team.
+- TEAM_ABBREVIATION: The abbreviated name of the team.
+- TEAM_NAME: The full name of the team.
+- PLAY_TYPE: The specific type of play situation (e.g., postup) the statistics are
+    representing.
+- TYPE_GROUPING: Grouping of data based on similar play types or outcomes.
+- PERCENTILE: The percentile rank of the team's performance relative to other teams.
+- GP: Games Played - the total number of games included in the sample.
+- POSS_PCT: Possession Percentage - the percentage of total possessions in which the
+    team was involved.
+- PPP: Points Per Possession - average points scored per possession.
+- FG_PCT: Field Goal Percentage - the percentage of field goals made out of attempted.
+- FT_POSS_PCT: Free Throw Possession Percentage - percentage of possessions resulting
+    in free throws.
+- TOV_POSS_PCT: Turnover Possession Percentage - percentage of possessions ending
+    in turnovers.
+- SF_POSS_PCT: Shooting Foul Possession Percentage - percentage of possessions resulting
+    in shooting fouls.
+- PLUSONE_POSS_PCT: And-One Possession Percentage - percentage of plays resulting
+    in an 'and-one' situation.
+- SCORE_POSS_PCT: Score Possession Percentage - percentage of possessions that resulted
+    in points.
+- EFG_PCT: Effective Field Goal Percentage - adjusts field goal percentage to account
+    for the value of three-point field goals.
+- POSS: Total Possessions - the total number of possessions the team had.
+- PTS: Total Points - the total number of points scored by the team.
+- FGM: Field Goals Made - the total number of field goals successfully made.
+- FGA: Field Goals Attempted - the total number of field goal attempts.
+- FGMX: Field Goals Made with a margin - a specific measure of field goals made in
+    critical situations.
+PullUpShot_player:
+- PLAYER_ID: Unique identifier for the player.
+- PLAYER_NAME: Name of the player.
+- TEAM_ID: Unique identifier for the team.
+- TEAM_ABBREVIATION: Abbreviated name of the team.
+- GP: Total games played by the player in the season.
+- W: "Total wins for the player\u2019s team in the season."
+- L: "Total losses for the player\u2019s team in the season."
+- MIN: Average minutes played by the player per game.
+- PULL_UP_FGM: Total number of made pull-up shots.
+- PULL_UP_FGA: Total number of attempted pull-up shots.
+- PULL_UP_FG_PCT: Field goal percentage of pull-up shots made.
+- PULL_UP_PTS: Total points scored from pull-up shots.
+- PULL_UP_FG3M: Total number of made three-point pull-up shots.
+- PULL_UP_FG3A: Total number of attempted three-point pull-up shots.
+- PULL_UP_FG3_PCT: Three-point field goal percentage of pull-up shots made.
+- PULL_UP_EFG_PCT: Effective field goal percentage for pull-up shots.
+- SEASON_ID: Identifier for the season.
+PullUpShot_team:
+- TEAM_ID: Unique identifier for the team.
+- TEAM_ABBREVIATION: Shortened version of the team's name (e.g., LAL for Los Angeles
+    Lakers).
+- TEAM_NAME: Full name of the team.
+- GP: Total number of games played by the team in the season.
+- W: Total number of wins by the team in the season.
+- L: Total number of losses by the team in the season.
+- MIN: Average minutes played by the team in pull up shot situations.
+- PULL_UP_FGM: Total number of field goals made on pull up shots.
+- PULL_UP_FGA: Total number of field goals attempted on pull up shots.
+- PULL_UP_FG_PCT: Field goal percentage on pull up shots (FGM/FGA).
+- PULL_UP_PTS: Total points scored from pull up shots.
+- PULL_UP_FG3M: Total number of three-point field goals made on pull up shots.
+- PULL_UP_FG3A: Total number of three-point field goals attempted on pull up shots.
+- PULL_UP_FG3_PCT: Three-point field goal percentage on pull up shots (FG3M/FG3A).
+- PULL_UP_EFG_PCT: Effective field goal percentage on pull up shots, accounting for
+    the value of three-pointers.
+- SEASON_ID: Identifier for the season in which the statistics were recorded.
+SpeedDistance_player:
+- PLAYER_ID: Unique identifier for the player.
+- PLAYER_NAME: Full name of the player.
+- TEAM_ID: Unique identifier for the player's team.
+- TEAM_ABBREVIATION: Abbreviation of the player's team name.
+- GP: Total games played by the player in the season.
+- W: Total wins recorded by the player's team in the season.
+- L: Total losses recorded by the player's team in the season.
+- MIN: Average minutes played by the player per game during the season.
+- MIN1: Additional measure of minutes played, if applicable.
+- DIST_FEET: Total distance covered by the player in feet during the season.
+- DIST_MILES: Total distance covered by the player in miles during the season.
+- DIST_MILES_OFF: Total distance covered by the player while on offense in miles.
+- DIST_MILES_DEF: Total distance covered by the player while on defense in miles.
+- AVG_SPEED: Average speed of the player during the season in miles per hour.
+- AVG_SPEED_OFF: Average speed of the player while on offense in miles per hour.
+- AVG_SPEED_DEF: Average speed of the player while on defense in miles per hour.
+- SEASON_ID: Unique identifier for the season.
+SpeedDistance_team:
+- TEAM_ID: Unique identifier for the team.
+- TEAM_ABBREVIATION: Abbreviated name of the team.
+- TEAM_NAME: Full name of the team.
+- GP: Total number of games played in the season.
+- W: Total number of wins in the season.
+- L: Total number of losses in the season.
+- MIN: Average minutes played per game.
+- MIN1: Average minutes played per game excluding overtime.
+- DIST_FEET: Average total distance covered by the team in feet.
+- DIST_MILES: Average total distance covered by the team in miles.
+- DIST_MILES_OFF: Average distance covered by the team on offense, measured in miles.
+- DIST_MILES_DEF: Average distance covered by the team on defense, measured in miles.
+- AVG_SPEED: Average speed of the team, calculated in feet per second.
+- AVG_SPEED_OFF: Average speed of the team while on offense, calculated in feet per
+    second.
+- AVG_SPEED_DEF: Average speed of the team while on defense, calculated in feet per
+    second.
+- SEASON_ID: Unique identifier for the season.
+Spotup_player:
+- SEASON_ID: Identifier for the season of the data, typically in the format YYYY-YYYY.
+- PLAYER_ID: Unique identifier for each player.
+- PLAYER_NAME: Full name of the player.
+- TEAM_ID: Unique identifier for the player's team.
+- TEAM_ABBREVIATION: Abbreviated name of the team (e.g., LAL for Los Angeles Lakers).
+- TEAM_NAME: Full name of the team.
+- PLAY_TYPE: Type of play being analyzed, in this case, spot-up plays.
+- TYPE_GROUPING: Category grouping for different types of plays.
+- PERCENTILE: Statistical percentile rank of the player's performance compared to
+    peers.
+- GP: Games played, indicating the number of games the player participated in.
+- POSS_PCT: Percentage of total possessions that were spot-up plays.
+- PPP: Points per possession, measuring scoring efficiency.
+- FG_PCT: Field goal percentage, calculated as FGM/FGA.
+- FT_POSS_PCT: Percentage of possessions that ended with free throw attempts.
+- TOV_POSS_PCT: Percentage of possessions that ended in turnovers.
+- SF_POSS_PCT: Percentage of possessions that resulted in three-point shooting fouls.
+- PLUSONE_POSS_PCT: Percentage of possessions that resulted in an and-one situation.
+- SCORE_POSS_PCT: Percentage of possessions that resulted in a score.
+- EFG_PCT: Effective field goal percentage, accounting for the extra point from three-pointers.
+- POSS: Total number of possessions recorded.
+- PTS: Total points scored by the player.
+- FGM: Field goals made.
+- FGA: Field goals attempted.
+- FGMX: Field goals made excluding certain situations or conditions.
+Spotup_team:
+- SEASON_ID: The identifier for the season in which the statistics were recorded.
+- TEAM_ID: The unique identifier assigned to the team.
+- TEAM_ABBREVIATION: The abbreviated name of the team, typically 3 letters.
+- TEAM_NAME: The full name of the team.
+- PLAY_TYPE: The category of play being analyzed, in this case, spot-up plays.
+- TYPE_GROUPING: Grouping of the play type for analysis purposes.
+- PERCENTILE: The percentile ranking of the team's performance compared to other teams.
+- GP: The number of games played to obtain these statistics.
+- POSS_PCT: The percentage of possessions that were spot-up plays.
+- PPP: Points per possession, indicating scoring efficiency.
+- FG_PCT: Field goal percentage for spot-up plays.
+- FT_POSS_PCT: Percentage of possessions that resulted in free throw opportunities.
+- TOV_POSS_PCT: Percentage of possessions that resulted in turnovers.
+- SF_POSS_PCT: Percentage of possessions that resulted in scoring fouls.
+- PLUSONE_POSS_PCT: Percentage of possessions that resulted in a plus-one free throw
+    opportunity.
+- SCORE_POSS_PCT: Percentage of possessions that resulted in scores.
+- EFG_PCT: Effective field goal percentage that accounts for the value of three-point
+    shots.
+- POSS: Total number of possessions for spot-up plays.
+- PTS: Total points scored from spot-up plays.
+- FGM: Total field goals made from spot-up plays.
+- FGA: Total field goals attempted from spot-up plays.
+- FGMX: An additional metric related to field goals made, specifics may vary.
+Transition_player:
+- SEASON_ID: The identifier for the NBA season.
+- PLAYER_ID: Unique identifier for the player.
+- PLAYER_NAME: Full name of the player.
+- TEAM_ID: Unique identifier for the team.
+- TEAM_ABBREVIATION: Abbreviated name of the team.
+- TEAM_NAME: Full name of the team.
+- PLAY_TYPE: The type of play being analyzed during transition.
+- TYPE_GROUPING: Categorization of play types.
+- PERCENTILE: "The player\u2019s ranking percentile compared to peers."
+- GP: Games played by the player in the season.
+- POSS_PCT: Percentage of possessions in which the player was involved.
+- PPP: Points per possession for the player.
+- FG_PCT: Field goal percentage for the player.
+- FT_POSS_PCT: Percentage of free throw possessions for the player.
+- TOV_POSS_PCT: Percentage of possessions that ended in turnovers.
+- SF_POSS_PCT: Percentage of possessions resulting in second chance points.
+- PLUSONE_POSS_PCT: Percentage of possessions resulting in 'and-one' situations.
+- SCORE_POSS_PCT: Percentage of possessions resulting in scores.
+- EFG_PCT: Effective field goal percentage considering the value of three-pointers.
+- POSS: Total possessions attributed to the player.
+- PTS: Total points scored by the player.
+- FGM: Field goals made by the player.
+- FGA: Field goals attempted by the player.
+- FGMX: Field goals made excluding missed free throws.
+Transition_team:
+- SEASON_ID: Unique identifier for the season of the statistics.
+- TEAM_ID: Unique identifier for the team.
+- TEAM_ABBREVIATION: Abbreviated name of the team.
+- TEAM_NAME: Full name of the team.
+- PLAY_TYPE: Type of play categorized in transition.
+- TYPE_GROUPING: Grouping of transition plays into categories.
+- PERCENTILE: The percentile ranking of the team's performance in transition plays
+    compared to other teams.
+- GP: Games played by the team during the season.
+- POSS_PCT: Percentage of plays that were transition possessions.
+- PPP: Points per possession in transition.
+- FG_PCT: Field goal percentage on transition plays.
+- FT_POSS_PCT: Percentage of transition possessions that resulted in free throw attempts.
+- TOV_POSS_PCT: Percentage of transition possessions that resulted in turnovers.
+- SF_POSS_PCT: Percentage of transition possessions that resulted in second chance
+    points.
+- PLUSONE_POSS_PCT: Percentage of transition possessions where the team scored an
+    additional free throw due to a foul.
+- SCORE_POSS_PCT: Percentage of transition possessions that resulted in points.
+- EFG_PCT: Effective field goal percentage on transition plays.
+- POSS: Total number of transition possessions.
+- PTS: Total points scored in transition during the season.
+- FGM: Total field goals made in transition.
+- FGA: Total field goals attempted in transition.
+- FGMX: Field goals made in transition excluding specific play types.
+combine_stats:
+- SEASON: The NBA season when the data was collected (e.g., 2022-2023).
+- PLAYER_ID: A unique identifier assigned to each player.
+- FIRST_NAME: The first name of the player.
+- LAST_NAME: The last name of the player.
+- PLAYER_NAME: The full name of the player (concatenation of FIRST_NAME and LAST_NAME).
+- POSITION: The primary playing position of the player (e.g., Guard, Forward, Center).
+- HEIGHT_WO_SHOES: The player's height without shoes, measured in inches.
+- HEIGHT_WO_SHOES_FT_IN: The player's height without shoes, expressed in feet and
+    inches.
+- HEIGHT_W_SHOES: The player's height with shoes, measured in inches.
+- HEIGHT_W_SHOES_FT_IN: The player's height with shoes, expressed in feet and inches.
+- WEIGHT: The player's weight, measured in pounds.
+- WINGSPAN: The distance from fingertip to fingertip when arms are fully extended,
+    measured in inches.
+- WINGSPAN_FT_IN: The wingspan, expressed in feet and inches.
+- STANDING_REACH: The vertical reach of the player while standing, measured in inches.
+- STANDING_REACH_FT_IN: The standing reach, expressed in feet and inches.
+- BODY_FAT_PCT: The percentage of body fat in relation to total body weight.
+- HAND_LENGTH: The length of the player's hands, measured in inches.
+- HAND_WIDTH: The width of the player's hands, measured in inches.
+- STANDING_VERTICAL_LEAP: The highest vertical leap the player can achieve from a
+    standing position, measured in inches.
+- MAX_VERTICAL_LEAP: The maximum vertical leap of the player, measured in inches.
+- LANE_AGILITY_TIME: The time taken to complete the lane agility test, measured in
+    seconds.
+- MODIFIED_LANE_AGILITY_TIME: The modified time taken to complete the lane agility
+    test, measured in seconds.
+- THREE_QUARTER_SPRINT: The time taken to run three-quarters of the court, measured
+    in seconds.
+- BENCH_PRESS: The amount of weight the player can lift in a bench press, typically
+    measured in pounds for a set number of repetitions.
+- SPOT_FIFTEEN_CORNER_LEFT: Shooting accuracy from the left corner at 15 feet, expressed
+    as a percentage.
+- SPOT_FIFTEEN_BREAK_LEFT: Shooting accuracy from the left break at 15 feet, expressed
+    as a percentage.
+- SPOT_FIFTEEN_TOP_KEY: Shooting accuracy from the top of the key at 15 feet, expressed
+    as a percentage.
+- SPOT_FIFTEEN_BREAK_RIGHT: Shooting accuracy from the right break at 15 feet, expressed
+    as a percentage.
+- SPOT_FIFTEEN_CORNER_RIGHT: Shooting accuracy from the right corner at 15 feet, expressed
+    as a percentage.
+- SPOT_COLLEGE_CORNER_LEFT: Shooting accuracy from the left corner in college range,
+    expressed as a percentage.
+- SPOT_COLLEGE_BREAK_LEFT: Shooting accuracy from the left break in college range,
+    expressed as a percentage.
+- SPOT_COLLEGE_TOP_KEY: Shooting accuracy from the top of the key in college range,
+    expressed as a percentage.
+- SPOT_COLLEGE_BREAK_RIGHT: Shooting accuracy from the right break in college range,
+    expressed as a percentage.
+- SPOT_COLLEGE_CORNER_RIGHT: Shooting accuracy from the right corner in college range,
+    expressed as a percentage.
+- SPOT_NBA_CORNER_LEFT: Shooting accuracy from the left corner in NBA range, expressed
+    as a percentage.
+- SPOT_NBA_BREAK_LEFT: Shooting accuracy from the left break in NBA range, expressed
+    as a percentage.
+- SPOT_NBA_TOP_KEY: Shooting accuracy from the top of the key in NBA range, expressed
+    as a percentage.
+- SPOT_NBA_BREAK_RIGHT: Shooting accuracy from the right break in NBA range, expressed
+    as a percentage.
+- SPOT_NBA_CORNER_RIGHT: Shooting accuracy from the right corner in NBA range, expressed
+    as a percentage.
+- OFF_DRIB_FIFTEEN_BREAK_LEFT: Shooting accuracy off the dribble from the left break
+    at 15 feet, expressed as a percentage.
+- OFF_DRIB_FIFTEEN_TOP_KEY: Shooting accuracy off the dribble from the top of the
+    key at 15 feet, expressed as a percentage.
+- OFF_DRIB_FIFTEEN_BREAK_RIGHT: Shooting accuracy off the dribble from the right break
+    at 15 feet, expressed as a percentage.
+- OFF_DRIB_COLLEGE_BREAK_LEFT: Shooting accuracy off the dribble from the left break
+    in college range, expressed as a percentage.
+- OFF_DRIB_COLLEGE_TOP_KEY: Shooting accuracy off the dribble from the top of the
+    key in college range, expressed as a percentage.
+- OFF_DRIB_COLLEGE_BREAK_RIGHT: Shooting accuracy off the dribble from the right break
+    in college range, expressed as a percentage.
+- ON_MOVE_FIFTEEN: Shooting accuracy while moving at 15 feet, expressed as a percentage.
+- ON_MOVE_COLLEGE: Shooting accuracy while moving in college range, expressed as a
+    percentage.
+common_info:
+- PERSON_ID: Unique identifier for each player.
+- FIRST_NAME: First name of the player.
+- LAST_NAME: Last name of the player.
+- DISPLAY_FIRST_LAST: "Formatted string showing player\u2019s first and last name."
+- DISPLAY_LAST_COMMA_FIRST: "Formatted string showing player\u2019s last name followed\
+    \ by first name."
+- DISPLAY_FI_LAST: "Formatted string showing player\u2019s first initial followed\
+    \ by last name."
+- PLAYER_SLUG: URL-friendly version of the player's name.
+- BIRTHDATE: Date of birth of the player.
+- SCHOOL: School or college the player attended.
+- COUNTRY: Country of origin of the player.
+- LAST_AFFILIATION: Most recent team or affiliate the player was associated with.
+- HEIGHT: Height of the player in feet and inches.
+- WEIGHT: Weight of the player in pounds.
+- SEASON_EXP: Number of seasons the player has played in the NBA.
+- JERSEY: Jersey number of the player.
+- POSITION: Playing position of the player.
+- ROSTERSTATUS: Current status on the team roster (e.g., active, inactive).
+- GAMES_PLAYED_CURRENT_SEASON_FLAG: Indicator if the player has played games in the
+    current season.
+- TEAM_ID: Unique identifier for the team.
+- TEAM_NAME: Full name of the team.
+- TEAM_ABBREVIATION: Official abbreviated name of the team.
+- TEAM_CODE: Code representing the team for branding purposes.
+- TEAM_CITY: City where the team is based.
+- PLAYERCODE: Unique code identifying the player.
+- FROM_YEAR: The year the player started their career.
+- TO_YEAR: The year the player ended their career.
+- DLEAGUE_FLAG: Indicator if the player has played in the D-League.
+- NBA_FLAG: Indicator if the player has played in the NBA.
+- GAMES_PLAYED_FLAG: Indicator if the player has played any games.
+- DRAFT_YEAR: Year the player was drafted into the NBA.
+- DRAFT_ROUND: Round in which the player was drafted.
+- DRAFT_NUMBER: Overall pick number in the draft.
+- GREATEST_75_FLAG: Indicator if the player is considered one of the 75 greatest players.
+lineup_details:
+- GROUP_ID: Unique identifier for the lineup group.
+- GROUP_NAME: Name of the player lineup group.
+- TEAM_ID: Unique identifier for the team.
+- TEAM_ABBREVIATION: Abbreviated name of the team.
+- MIN: Average minutes played by the lineup.
+- OFF_RATING: Offensive rating of the lineup, measuring points scored per 100 possessions.
+- DEF_RATING: Defensive rating of the lineup, measuring points allowed per 100 possessions.
+- NET_RATING: Net rating of the lineup, calculated as offensive rating minus defensive
+    rating.
+- PACE: Average number of possessions per 48 minutes played by the lineup.
+- TS_PCT: True shooting percentage of the lineup, an efficiency measure that takes
+    into account field goals, three-point field goals, and free throws.
+- FTA_RATE: Rate of free throw attempts per field goal attempt for the lineup.
+- TM_AST_PCT: Team assist percentage, indicating the percentage of field goals made
+    by the lineup that were assisted.
+- PCT_FGA_2PT: Percentage of field goals attempted that are two-point attempts.
+- PCT_FGA_3PT: Percentage of field goals attempted that are three-point attempts.
+- PCT_PTS_2PT_MR: Percentage of points scored from two-point made field goals.
+- PCT_PTS_FB: Percentage of points scored from fast break opportunities.
+- PCT_PTS_FT: Percentage of points scored from free throw attempts.
+- PCT_PTS_PAINT: Percentage of points scored from the paint area.
+- PCT_AST_FGM: Percentage of field goals made that were assisted.
+- PCT_UAST_FGM: Percentage of field goals made that were unassisted.
+- OPP_FG3_PCT: Opponent's three-point shooting percentage against the lineup.
+- OPP_EFG_PCT: Opponent's effective field goal percentage against the lineup.
+- OPP_FTA_RATE: Opponent's free throw attempt rate against the lineup.
+- OPP_TOV_PCT: Opponent's turnover percentage against the lineup.
+- SEASON_ID: Unique identifier for the season in which the statistics were recorded.
+lineups:
+- GROUP_SET: A categorization or grouping of player lineups for analysis.
+- GROUP_ID: A unique identifier for each group of player lineups.
+- GROUP_NAME: The name associated with a specific group of player lineups.
+- TEAM_ID: A unique identifier representing the team.
+- TEAM_ABBREVIATION: The official short form or abbreviation of the team's name.
+- GP: Games Played - the total number of games in which the lineup participated.
+- W: Wins - the total number of games won by the lineup.
+- L: Losses - the total number of games lost by the lineup.
+- W_PCT: Winning Percentage - the win ratio expressed as a decimal.
+- MIN: Minutes - the average minutes played by the lineup across all games.
+- FGM: Field Goals Made - the total successful field goals made.
+- FGA: Field Goals Attempted - the total field goals attempted.
+- FG_PCT: Field Goal Percentage - the percentage of successful field goals made.
+- FG3M: Three-Point Field Goals Made - the total successful three-point shots made.
+- FG3A: Three-Point Field Goals Attempted - the total three-point shots attempted.
+- FG3_PCT: Three-Point Field Goal Percentage - the percentage of successful three-point
+    shots made.
+- FTM: Free Throws Made - the total successful free throws made.
+- FTA: Free Throws Attempted - the total free throws attempted.
+- FT_PCT: Free Throw Percentage - the percentage of successful free throws made.
+- OREB: Offensive Rebounds - the total number of rebounds collected on the offensive
+    end.
+- DREB: Defensive Rebounds - the total number of rebounds collected on the defensive
+    end.
+- REB: Total Rebounds - the total number of rebounds (offensive + defensive) collected.
+- AST: Assists - the total number of assists made by the lineup.
+- TOV: Turnovers - the total number of times the lineup lost possession.
+- STL: Steals - the total number of steals made by the lineup.
+- BLK: Blocks - the total number of shots blocked by the lineup.
+- BLKA: Blocked Attempts - the total number of shooting attempts blocked by the lineup.
+- PF: Personal Fouls - the total number of personal fouls committed.
+- PFD: Personal Fouls Drawn - the total number of fouls drawn by the lineup.
+- PTS: Points - the total points scored by the lineup.
+- PLUS_MINUS: Plus/Minus - the point differential per 100 possessions during which
+    the lineup is on the court.
+- GP_RANK: Rank of Games Played among all lineups.
+- W_RANK: Rank of Wins among all lineups.
+- L_RANK: Rank of Losses among all lineups.
+- W_PCT_RANK: Rank of Winning Percentage among all lineups.
+- MIN_RANK: Rank of Minutes played among all lineups.
+- FGM_RANK: Rank of Field Goals Made among all lineups.
+- FGA_RANK: Rank of Field Goals Attempted among all lineups.
+- FG_PCT_RANK: Rank of Field Goal Percentage among all lineups.
+- FG3M_RANK: Rank of Three-Point Field Goals Made among all lineups.
+- FG3A_RANK: Rank of Three-Point Field Goals Attempted among all lineups.
+- FG3_PCT_RANK: Rank of Three-Point Field Goal Percentage among all lineups.
+- FTM_RANK: Rank of Free Throws Made among all lineups.
+- FTA_RANK: Rank of Free Throws Attempted among all lineups.
+- FT_PCT_RANK: Rank of Free Throw Percentage among all lineups.
+- OREB_RANK: Rank of Offensive Rebounds among all lineups.
+- DREB_RANK: Rank of Defensive Rebounds among all lineups.
+- REB_RANK: Rank of Total Rebounds among all lineups.
+- AST_RANK: Rank of Assists among all lineups.
+- TOV_RANK: Rank of Turnovers among all lineups.
+- STL_RANK: Rank of Steals among all lineups.
+- BLK_RANK: Rank of Blocks among all lineups.
+- BLKA_RANK: Rank of Blocked Attempts among all lineups.
+- PF_RANK: Rank of Personal Fouls among all lineups.
+- PFD_RANK: Rank of Personal Fouls Drawn among all lineups.
+- PTS_RANK: Rank of Points scored among all lineups.
+- PLUS_MINUS_RANK: Rank of Plus/Minus among all lineups.
+- SEASON_ID: A unique identifier representing the specific season.
+opponent_shooting:
+- TEAM_ID: Unique identifier for the team.
+- TEAM_NAME: Full name of the team.
+- TEAM_ABBREVIATION: Abbreviated name of the team.
+- GP: Total number of games played against the team.
+- G: Total number of points scored by the opponent against the team.
+- FGA_FREQUENCY: Frequency of field goal attempts made by the opponent against the
+    team.
+- FGM: Total number of field goals made by the opponent against the team.
+- FGA: Total number of field goal attempts by the opponent against the team.
+- FG_PCT: Field goal percentage of the opponent against the team (FGM/FGA).
+- EFG_PCT: Effective field goal percentage of the opponent against the team, accounting
+    for the value of three-point shots.
+- FG2A_FREQUENCY: Frequency of two-point field goal attempts made by the opponent
+    against the team.
+- FG2M: Total number of two-point field goals made by the opponent against the team.
+- FG2A: Total number of two-point field goal attempts by the opponent against the
+    team.
+- FG2_PCT: Two-point field goal percentage of the opponent against the team (FG2M/FG2A).
+- FG3A_FREQUENCY: Frequency of three-point field goal attempts made by the opponent
+    against the team.
+- FG3M: Total number of three-point field goals made by the opponent against the team.
+- FG3A: Total number of three-point field goal attempts by the opponent against the
+    team.
+- FG3_PCT: Three-point field goal percentage of the opponent against the team (FG3M/FG3A).
+- SEASON_ID: Unique identifier for the season in which the games were played.
+player_clutch:
+- GROUP_SET: A grouping identifier for the set of data, typically designating a specific
+    classification for the data.
+- PLAYER_ID: A unique identifier for each player.
+- PLAYER_NAME: The full name of the player.
+- NICKNAME: The commonly known nickname of the player.
+- TEAM_ID: A unique identifier for the team the player is associated with.
+- TEAM_ABBREVIATION: The abbreviated identifier for the team.
+- AGE: The age of the player at the start of the season.
+- GP: Games played by the player in clutch situations.
+- W: Total number of wins in clutch situations.
+- L: Total number of losses in clutch situations.
+- W_PCT: Winning percentage in clutch situations, calculated as wins divided by total
+    games played.
+- MIN: Average minutes played in clutch situations.
+- FGM: Field goals made by the player in clutch situations.
+- FGA: Field goals attempted by the player in clutch situations.
+- FG_PCT: Field goal percentage in clutch situations, calculated as field goals made
+    divided by field goals attempted.
+- FG3M: Three-point field goals made by the player in clutch situations.
+- FG3A: Three-point field goals attempted by the player in clutch situations.
+- FG3_PCT: Three-point field goal percentage in clutch situations, calculated as three-point
+    field goals made divided by three-point field goals attempted.
+- FTM: Free throws made by the player in clutch situations.
+- FTA: Free throws attempted by the player in clutch situations.
+- FT_PCT: Free throw percentage in clutch situations, calculated as free throws made
+    divided by free throws attempted.
+- OREB: Offensive rebounds secured by the player in clutch situations.
+- DREB: Defensive rebounds secured by the player in clutch situations.
+- REB: Total rebounds (offensive + defensive) secured by the player in clutch situations.
+- AST: Assists made by the player in clutch situations.
+- TOV: Turnovers committed by the player in clutch situations.
+- STL: Steals made by the player in clutch situations.
+- BLK: Blocks made by the player in clutch situations.
+- BLKA: Blocked attempts against the player in clutch situations.
+- PF: Personal fouls committed by the player in clutch situations.
+- PFD: Personal fouls drawn by the player in clutch situations.
+- PTS: Total points scored by the player in clutch situations.
+- PLUS_MINUS: The plus/minus statistic indicating the point differential while the
+    player is on the court in clutch situations.
+- NBA_FANTASY_PTS: Total fantasy points accrued by the player according to NBA fantasy
+    scoring in clutch situations.
+- DD2: Double doubles achieved by the player in clutch situations.
+- TD3: Triple doubles achieved by the player in clutch situations.
+- WNBA_FANTASY_PTS: Total fantasy points accrued by the player according to WNBA fantasy
+    scoring in clutch situations.
+- GP_RANK: Ranking of the player based on games played in clutch situations.
+- W_RANK: Ranking of the player based on total wins in clutch situations.
+- L_RANK: Ranking of the player based on total losses in clutch situations.
+- W_PCT_RANK: Ranking of the player based on winning percentage in clutch situations.
+- MIN_RANK: Ranking of the player based on average minutes played in clutch situations.
+- FGM_RANK: Ranking of the player based on field goals made in clutch situations.
+- FGA_RANK: Ranking of the player based on field goals attempted in clutch situations.
+- FG_PCT_RANK: Ranking of the player based on field goal percentage in clutch situations.
+- FG3M_RANK: Ranking of the player based on three-point field goals made in clutch
+    situations.
+- FG3A_RANK: Ranking of the player based on three-point field goals attempted in clutch
+    situations.
+- FG3_PCT_RANK: Ranking of the player based on three-point field goal percentage in
+    clutch situations.
+- FTM_RANK: Ranking of the player based on free throws made in clutch situations.
+- FTA_RANK: Ranking of the player based on free throws attempted in clutch situations.
+- FT_PCT_RANK: Ranking of the player based on free throw percentage in clutch situations.
+- OREB_RANK: Ranking of the player based on offensive rebounds secured in clutch situations.
+- DREB_RANK: Ranking of the player based on defensive rebounds secured in clutch situations.
+- REB_RANK: Ranking of the player based on total rebounds secured in clutch situations.
+- AST_RANK: Ranking of the player based on assists made in clutch situations.
+- TOV_RANK: Ranking of the player based on turnovers committed in clutch situations.
+- STL_RANK: Ranking of the player based on steals made in clutch situations.
+- BLK_RANK: Ranking of the player based on blocks made in clutch situations.
+- BLKA_RANK: Ranking of the player based on blocked attempts against in clutch situations.
+- PF_RANK: Ranking of the player based on personal fouls committed in clutch situations.
+- PFD_RANK: Ranking of the player based on personal fouls drawn in clutch situations.
+- PTS_RANK: Ranking of the player based on total points scored in clutch situations.
+- PLUS_MINUS_RANK: Ranking of the player based on plus/minus statistic in clutch situations.
+- NBA_FANTASY_PTS_RANK: Ranking of the player based on fantasy points in NBA scoring
+    in clutch situations.
+- DD2_RANK: Ranking of the player based on double doubles achieved in clutch situations.
+- TD3_RANK: Ranking of the player based on triple doubles achieved in clutch situations.
+- WNBA_FANTASY_PTS_RANK: Ranking of the player based on fantasy points in WNBA scoring
+    in clutch situations.
+- SEASON_ID: A unique identifier for the season pertaining to the statistics.
+player_defense:
+- CLOSE_DEF_PERSON_ID: Unique identifier for the player in close defense situations.
+- PLAYER_NAME: The full name of the player.
+- PLAYER_LAST_TEAM_ID: Unique identifier for the player's last team.
+- PLAYER_LAST_TEAM_ABBREVIATION: Abbreviated name of the player's last team.
+- PLAYER_POSITION: The position the player plays on the basketball team.
+- AGE: The age of the player during the season.
+- GP: Average number of games played by the player in the season.
+- G: Average number of defensive games played by the player.
+- FREQ: Frequency of close defensive actions undertaken by the player.
+- D_FGM: Average number of field goals made by opponents while the player was defending.
+- D_FGA: Average number of field goals attempted by opponents while the player was
+    defending.
+- D_FG_PCT: Average field goal percentage of opponents while the player was defending.
+- NORMAL_FG_PCT: Average field goal percentage of the player under normal circumstances.
+- PCT_PLUSMINUS: Percentage difference in point differential when the player is on
+    the court versus off.
+- SEASON_ID: Unique identifier for the season being analyzed.
+player_games:
+- SEASON_YEAR: The year of the season during which the games were played.
+- PLAYER_ID: A unique identifier assigned to each player.
+- PLAYER_NAME: The full name of the player.
+- NICKNAME: The nickname of the player.
+- TEAM_ID: A unique identifier for the team the player belongs to.
+- TEAM_ABBREVIATION: The abbreviated name of the team.
+- TEAM_NAME: The full name of the team.
+- GAME_ID: A unique identifier for each game.
+- GAME_DATE: The date when the game was played.
+- MATCHUP: The matchup description, including the teams involved.
+- WL: Win/Loss indicator for the game (W for win, L for loss).
+- MIN: Total minutes played by the player in the game.
+- FGM: Field Goals Made - total number of successful field goal attempts.
+- FGA: Field Goals Attempted - total number of field goal attempts.
+- FG_PCT: Field Goal Percentage - percentage of successful field goal attempts.
+- FG3M: Three-Point Field Goals Made - total number of successful three-point attempts.
+- FG3A: Three-Point Field Goals Attempted - total number of three-point attempts.
+- FG3_PCT: Three-Point Field Goal Percentage - percentage of successful three-point
+    attempts.
+- FTM: Free Throws Made - total number of successful free throw attempts.
+- FTA: Free Throws Attempted - total number of free throw attempts.
+- FT_PCT: Free Throw Percentage - percentage of successful free throw attempts.
+- OREB: Offensive Rebounds - total number of offensive rebounds.
+- DREB: Defensive Rebounds - total number of defensive rebounds.
+- REB: Total Rebounds - sum of offensive and defensive rebounds.
+- AST: Assists - total number of assists made by the player.
+- TOV: Turnovers - total number of times the player lost possession.
+- STL: Steals - total number of steals made by the player.
+- BLK: Blocks - total number of shots blocked by the player.
+- BLKA: Blocked Attempts - total number of field goal attempts that were blocked.
+- PF: Personal Fouls - total number of fouls committed by the player.
+- PFD: Personal Fouls Drawn - total number of fouls drawn by the player.
+- PTS: Points - total points scored by the player.
+- PLUS_MINUS: Plus/Minus statistic that indicates the point differential when the
+    player is on the court.
+- NBA_FANTASY_PTS: Fantasy points scored by the player based on performance metrics.
+- DD2: Double-Doubles - instances where the player achieved double digits in two statistical
+    categories.
+- TD3: Triple-Doubles - instances where the player achieved double digits in three
+    statistical categories.
+- GP_RANK: Rank of the player based on games played.
+  WNBA_FANTASY_PTS: Fantasy points scored by the player, applicable to WNBA.
+- W_RANK: Rank of the player based on wins.
+- L_RANK: Rank of the player based on losses.
+- W_PCT_RANK: Rank of the player based on win percentage.
+- MIN_RANK: Rank of the player based on total minutes played.
+- FGM_RANK: Rank of the player based on field goals made.
+- FGA_RANK: Rank of the player based on field goals attempted.
+- FG_PCT_RANK: Rank of the player based on field goal percentage.
+- FG3M_RANK: Rank of the player based on three-point field goals made.
+- FG3A_RANK: Rank of the player based on three-point field goals attempted.
+- FG3_PCT_RANK: Rank of the player based on three-point field goal percentage.
+- FTM_RANK: Rank of the player based on free throws made.
+- FTA_RANK: Rank of the player based on free throws attempted.
+- FT_PCT_RANK: Rank of the player based on free throw percentage.
+- OREB_RANK: Rank of the player based on offensive rebounds.
+- DREB_RANK: Rank of the player based on defensive rebounds.
+- REB_RANK: Rank of the player based on total rebounds.
+- AST_RANK: Rank of the player based on assists.
+- TOV_RANK: Rank of the player based on turnovers.
+- STL_RANK: Rank of the player based on steals.
+- BLK_RANK: Rank of the player based on blocks.
+- BLKA_RANK: Rank of the player based on blocked attempts.
+- PF_RANK: Rank of the player based on personal fouls.
+- PFD_RANK: Rank of the player based on personal fouls drawn.
+- PTS_RANK: Rank of the player based on points scored.
+- PLUS_MINUS_RANK: Rank of the player based on plus/minus statistic.
+- NBA_FANTASY_PTS_RANK: Rank of the player based on fantasy points in NBA.
+- DD2_RANK: Rank of the player based on double-doubles achieved.
+- TD3_RANK: Rank of the player based on triple-doubles achieved.
+- WNBA_FANTASY_PTS_RANK: Rank of the player based on fantasy points in WNBA.
+- AVAILABLE_FLAG: Indicator of whether the player is available to play.
+- MIN_SEC: Total minutes played expressed in seconds.
+- SEASON_ID: A unique identifier for the specific season.
+- VIDEO_AVAILABLE: Indicator of whether video highlights of the game are available.
+player_hustle:
+- PLAYER_ID: Unique identifier for each player.
+- PLAYER_NAME: Name of the player.
+- TEAM_ID: Unique identifier for the team.
+- TEAM_ABBREVIATION: Abbreviated name of the team.
+- AGE: Age of the player during the season.
+- G: Total number of games played by the player in the season.
+- MIN: Average minutes played per game by the player.
+- CONTESTED_SHOTS: Total number of shots that the player contested.
+- CONTESTED_SHOTS_2PT: Total number of 2-point shots that the player contested.
+- CONTESTED_SHOTS_3PT: Total number of 3-point shots that the player contested.
+- DEFLECTIONS: Total number of passes or shots deflected by the player.
+- CHARGES_DRAWN: Total number of charging fouls drawn by the player.
+- SCREEN_ASSISTS: Total number of assists the player recorded from screens set.
+- SCREEN_AST_PTS: Total points resulting from the player's screen assists.
+- OFF_LOOSE_BALLS_RECOVERED: Total number of offensive loose balls recovered by the
+    player.
+- DEF_LOOSE_BALLS_RECOVERED: Total number of defensive loose balls recovered by the
+    player.
+- LOOSE_BALLS_RECOVERED: Total number of loose balls (offensive and defensive) recovered
+    by the player.
+- PCT_LOOSE_BALLS_RECOVERED_OFF: Percentage of offensive loose balls recovered by
+    the player.
+- PCT_LOOSE_BALLS_RECOVERED_DEF: Percentage of defensive loose balls recovered by
+    the player.
+- OFF_BOXOUTS: Total number of offensive boxouts executed by the player.
+- DEF_BOXOUTS: Total number of defensive boxouts executed by the player.
+- BOX_OUT_PLAYER_TEAM_REBS: Rebounds secured by players from the team while boxouting.
+- BOX_OUT_PLAYER_REBS: Rebounds secured by the player while executing boxouts.
+- BOX_OUTS: Total number of boxouts performed by the player.
+- PCT_BOX_OUTS_OFF: Percentage of the player's boxouts that are offensive.
+- PCT_BOX_OUTS_DEF: Percentage of the player's boxouts that are defensive.
+- PCT_BOX_OUTS_TEAM_REB: Percentage of team rebounds attributed to the player's boxouts.
+- PCT_BOX_OUTS_REB: Percentage of rebounds resulting from the player's boxouts.
+- SEASON_ID: Unique identifier for the season.
+player_matchups:
+- SEASON_ID: The unique identifier for the NBA season.
+- OFF_PLAYER_ID: The unique identifier for the offensive player.
+- OFF_PLAYER_NAME: The name of the offensive player.
+- DEF_PLAYER_ID: The unique identifier for the defensive player.
+- DEF_PLAYER_NAME: The name of the defensive player.
+- GP: Total games played in the matchup.
+- MATCHUP_MIN: Average minutes played by the offensive player in matchup against the
+    defender.
+- PARTIAL_POSS: Average number of partial possessions for the offensive player.
+- PLAYER_PTS: Average points scored by the offensive player in the matchup.
+- TEAM_PTS: "Average points scored by the offensive player\u2019s team in the matchup."
+- MATCHUP_AST: Average assists recorded by the offensive player against the defender.
+- MATCHUP_TOV: Average turnovers committed by the offensive player in the matchup.
+- MATCHUP_BLK: Average blocks recorded by the offensive player in the matchup.
+- MATCHUP_FGM: Average field goals made by the offensive player in the matchup.
+- MATCHUP_FGA: Average field goals attempted by the offensive player in the matchup.
+- MATCHUP_FG_PCT: Average field goal percentage of the offensive player in the matchup.
+- MATCHUP_FG3M: Average three-point field goals made by the offensive player in the
+    matchup.
+- MATCHUP_FG3A: Average three-point field goals attempted by the offensive player
+    in the matchup.
+- MATCHUP_FG3_PCT: Average three-point field goal percentage of the offensive player
+    in the matchup.
+- HELP_BLK: Average help blocks recorded by the offensive player.
+- HELP_FGM: Average field goals made assisted by help.
+- HELP_FGA: Average field goals attempted assisted by help.
+- HELP_FG_PERC: Average field goal percentage of shots assisted by help.
+- MATCHUP_FTM: Average free throws made by the offensive player in the matchup.
+- MATCHUP_FTA: Average free throws attempted by the offensive player in the matchup.
+- SFL: Average shot fouls drawn by the offensive player in the matchup.
+player_shot_locations:
+- 'Unnamed: 0': An identifier for the player.
+- 'Unnamed: 1': An identifier for the game.
+- 'Unnamed: 2': The total number of shots taken by the player.
+- 'Unnamed: 3': The total number of successful shots made by the player.
+- 'Unnamed: 4': The shooting percentage of the player.
+- 'Unnamed: 5': The average points scored by the player.
+- Restricted Area: The total number of shots taken by the player in the restricted
+    area.
+- Restricted Area.1: The total number of successful shots made in the restricted area.
+- Restricted Area.2: The shooting percentage for shots taken in the restricted area.
+- In The Paint (Non-RA): The total number of shots taken by the player in the paint
+    excluding restricted area.
+- In The Paint (Non-RA).1: The total number of successful shots made in the paint
+    excluding restricted area.
+- In The Paint (Non-RA).2: The shooting percentage for shots taken in the paint excluding
+    restricted area.
+- Mid-Range: The total number of shots taken from mid-range.
+- Mid-Range.1: The total number of successful mid-range shots made.
+- Mid-Range.2: The shooting percentage for mid-range shots.
+- Left Corner 3: The total number of three-point shots taken from the left corner.
+- Left Corner 3.1: The total number of successful shots made from the left corner.
+- Left Corner 3.2: The shooting percentage for shots taken from the left corner.
+- Right Corner 3: The total number of three-point shots taken from the right corner.
+- Right Corner 3.1: The total number of successful shots made from the right corner.
+- Right Corner 3.2: The shooting percentage for shots taken from the right corner.
+- Above the Break 3: The total number of three-point shots taken above the break.
+- Above the Break 3.1: The total number of successful shots made above the break.
+- Above the Break 3.2: The shooting percentage for shots taken above the break.
+- Backcourt: The total number of shots taken from the backcourt.
+- Backcourt.1: The total number of successful shots made from the backcourt.
+- Backcourt.2: The shooting percentage for shots taken from the backcourt.
+- Corner 3: Total three-point shots from corners combined.
+- Corner 3.1: Total successful corner three-point shots.
+- Corner 3.2: Shooting percentage for corner three-point shots.
+- SEASON_ID: An identifier for the season in which the statistics were recorded.
+player_shots:
+- PLAYER_ID: Unique identifier for the player.
+- PLAYER_NAME: Full name of the player.
+- PLAYER_LAST_TEAM_ID: Unique identifier for the player's last team.
+- PLAYER_LAST_TEAM_ABBREVIATION: Abbreviation for the player's last team.
+- AGE: Age of the player at the start of the season.
+- GP: Games played by the player during the season.
+- G: Games in which the player scored.
+- FGA_FREQUENCY: Average frequency of field goal attempts per game.
+- FGM: Total field goals made by the player.
+- FGA: Total field goal attempts by the player.
+- FG_PCT: Field goal percentage, calculated as FGM/FGA.
+- EFG_PCT: Effective field goal percentage, taking into account the value of three-point
+    shots.
+- FG2A_FREQUENCY: Average frequency of two-point field goal attempts per game.
+- FG2M: Total two-point field goals made by the player.
+- FG2A: Total two-point field goal attempts by the player.
+- FG2_PCT: Two-point field goal percentage, calculated as FG2M/FG2A.
+- FG3A_FREQUENCY: Average frequency of three-point field goal attempts per game.
+- FG3M: Total three-point field goals made by the player.
+- FG3A: Total three-point field goal attempts by the player.
+- FG3_PCT: Three-point field goal percentage, calculated as FG3M/FG3A.
+- SEASON_ID: Unique identifier for the season.
+player_stats:
+- PLAYER_ID: Unique identifier for each player.
+- PLAYER_NAME: Full name of the player.
+- NICKNAME: Common nickname or moniker of the player.
+- TEAM_ID: Unique identifier for the player's team.
+- TEAM_ABBREVIATION: Abbreviation of the player's team name.
+- AGE: Age of the player during the season.
+- GP: Total games played by the player in the season.
+- W: Total wins recorded by the player's team in games played.
+- L: Total losses recorded by the player's team in games played.
+- W_PCT: Winning percentage of the player's team (wins divided by total games).
+- MIN: Average minutes played per game by the player.
+- FGM: Average field goals made per game by the player.
+- FGA: Average field goals attempted per game by the player.
+- FG_PCT: Field goal percentage (FGM / FGA) for the player.
+- FG3M: Average three-point field goals made per game by the player.
+- FG3A: Average three-point field goals attempted per game by the player.
+- FG3_PCT: Three-point field goal percentage (FG3M / FG3A) for the player.
+- FTM: Average free throws made per game by the player.
+- FTA: Average free throws attempted per game by the player.
+- FT_PCT: Free throw percentage (FTM / FTA) for the player.
+- OREB: Average offensive rebounds per game by the player.
+- DREB: Average defensive rebounds per game by the player.
+- REB: Average total rebounds per game (OREB + DREB) by the player.
+- AST: Average assists per game by the player.
+- TOV: Average turnovers per game committed by the player.
+- STL: Average steals per game made by the player.
+- BLK: Average blocks per game made by the player.
+- BLKA: Average blocked attempts per game against the player.
+- PF: Average personal fouls committed per game by the player.
+- PFD: Average personal fouls drawn per game by the player.
+- PTS: Average points scored per game by the player.
+- PLUS_MINUS: Average plus/minus statistic per game for the player.
+- NBA_FANTASY_PTS: Average fantasy points scored per game based on NBA scoring rules.
+- DD2: Total double-doubles achieved by the player.
+- TD3: Total triple-doubles achieved by the player.
+- WNBA_FANTASY_PTS: Average fantasy points scored per game based on WNBA scoring rules.
+- GP_RANK: Ranking of the player based on total games played.
+- W_RANK: Ranking of the player based on total wins achieved.
+- L_RANK: Ranking of the player based on total losses recorded.
+- W_PCT_RANK: Ranking of the player based on winning percentage.
+- MIN_RANK: Ranking of the player based on average minutes played.
+- FGM_RANK: Ranking of the player based on average field goals made.
+- FGA_RANK: Ranking of the player based on average field goals attempted.
+- FG_PCT_RANK: Ranking of the player based on field goal percentage.
+- FG3M_RANK: Ranking of the player based on average three-point field goals made.
+- FG3A_RANK: Ranking of the player based on average three-point field goals attempted.
+- FG3_PCT_RANK: Ranking of the player based on three-point field goal percentage.
+- FTM_RANK: Ranking of the player based on average free throws made.
+- FTA_RANK: Ranking of the player based on average free throws attempted.
+- FT_PCT_RANK: Ranking of the player based on free throw percentage.
+- OREB_RANK: Ranking of the player based on average offensive rebounds.
+- DREB_RANK: Ranking of the player based on average defensive rebounds.
+- REB_RANK: Ranking of the player based on average total rebounds.
+- AST_RANK: Ranking of the player based on average assists.
+- TOV_RANK: Ranking of the player based on average turnovers.
+- STL_RANK: Ranking of the player based on average steals.
+- BLK_RANK: Ranking of the player based on average blocks.
+- BLKA_RANK: Ranking of the player based on average blocked attempts against.
+- PF_RANK: Ranking of the player based on average personal fouls committed.
+- PFD_RANK: Ranking of the player based on average personal fouls drawn.
+- PTS_RANK: Ranking of the player based on average points scored.
+- PLUS_MINUS_RANK: Ranking of the player based on average plus/minus statistic.
+- NBA_FANTASY_PTS_RANK: Ranking of the player based on average fantasy points scored
+    according to NBA rules.
+- DD2_RANK: Ranking of the player based on total double-doubles achieved.
+- TD3_RANK: Ranking of the player based on total triple-doubles achieved.
+- WNBA_FANTASY_PTS_RANK: Ranking of the player based on average fantasy points scored
+    according to WNBA rules.
+- SEASON_ID: Unique identifier for the season to which the statistics pertain.
+salaries:
+- Player: Name of the player receiving the salary.
+- Salary: Total salary amount awarded to the player for the specified season.
+- Adj_Salary: Adjusted salary amount that accounts for various factors such as performance,
+    bonuses, or market adjustments.
+- Season: The specific season during which the salary is applicable.
+- SEASON_ID: A unique identifier for the season.
+team_clutch:
+- TEAM_ID: Unique identifier for the team.
+- TEAM_NAME: Name of the team.
+- GP: Number of games played in clutch time.
+- W: Number of games won in clutch time.
+- L: Number of games lost in clutch time.
+- W_PCT: Winning percentage in clutch time (W/GP).
+- MIN: Total minutes played in clutch time.
+- FGM: Total field goals made in clutch time.
+- FGA: Total field goals attempted in clutch time.
+- FG_PCT: Field goal percentage in clutch time (FGM/FGA).
+- FG3M: Total three-point field goals made in clutch time.
+- FG3A: Total three-point field goals attempted in clutch time.
+- FG3_PCT: Three-point field goal percentage in clutch time (FG3M/FG3A).
+- FTM: Total free throws made in clutch time.
+- FTA: Total free throws attempted in clutch time.
+- FT_PCT: Free throw percentage in clutch time (FTM/FTA).
+- OREB: Total offensive rebounds in clutch time.
+- DREB: Total defensive rebounds in clutch time.
+- REB: Total rebounds (offensive + defensive) in clutch time.
+- AST: Total assists in clutch time.
+- TOV: Total turnovers in clutch time.
+- STL: Total steals in clutch time.
+- BLK: Total blocks in clutch time.
+- BLKA: Total blocked attempts against the team in clutch time.
+- PF: Total personal fouls committed by the team in clutch time.
+- PFD: Total personal fouls drawn by the team in clutch time.
+- PTS: Total points scored by the team in clutch time.
+- PLUS_MINUS: Point differential for the team in clutch time.
+- GP_RANK: Rank of the team based on games played in clutch time.
+- W_RANK: Rank of the team based on games won in clutch time.
+- L_RANK: Rank of the team based on games lost in clutch time.
+- W_PCT_RANK: Rank of the team based on winning percentage in clutch time.
+- MIN_RANK: Rank of the team based on total minutes played in clutch time.
+- FGM_RANK: Rank of the team based on total field goals made in clutch time.
+- FGA_RANK: Rank of the team based on total field goals attempted in clutch time.
+- FG_PCT_RANK: Rank of the team based on field goal percentage in clutch time.
+- FG3M_RANK: Rank of the team based on total three-point field goals made in clutch
+    time.
+- FG3A_RANK: Rank of the team based on total three-point field goals attempted in
+    clutch time.
+- FG3_PCT_RANK: Rank of the team based on three-point field goal percentage in clutch
+    time.
+- FTM_RANK: Rank of the team based on total free throws made in clutch time.
+- FTA_RANK: Rank of the team based on total free throws attempted in clutch time.
+- FT_PCT_RANK: Rank of the team based on free throw percentage in clutch time.
+- OREB_RANK: Rank of the team based on total offensive rebounds in clutch time.
+- DREB_RANK: Rank of the team based on total defensive rebounds in clutch time.
+- REB_RANK: Rank of the team based on total rebounds in clutch time.
+- AST_RANK: Rank of the team based on total assists in clutch time.
+- TOV_RANK: Rank of the team based on total turnovers in clutch time.
+- STL_RANK: Rank of the team based on total steals in clutch time.
+- BLK_RANK: Rank of the team based on total blocks in clutch time.
+- BLKA_RANK: Rank of the team based on total blocked attempts against the team in
+    clutch time.
+- PF_RANK: Rank of the team based on personal fouls committed in clutch time.
+- PFD_RANK: Rank of the team based on personal fouls drawn in clutch time.
+- PTS_RANK: Rank of the team based on total points scored in clutch time.
+- PLUS_MINUS_RANK: Rank of the team based on point differential in clutch time.
+- SEASON_ID: Identifier for the season.
+team_defense:
+- TEAM_ID: Unique identifier for the team.
+- TEAM_NAME: Full name of the team.
+- TEAM_ABBREVIATION: Abbreviation of the team name.
+- GP: Games Played by the team during the season.
+- G: Total points allowed by the team.
+- FREQ: Frequency of games in which the statistics are measured.
+- D_FGM: Defensive Field Goals Made by the opposing team.
+- D_FGA: Defensive Field Goals Attempted by the opposing team.
+- D_FG_PCT: Defensive Field Goal Percentage allowed by the team (D_FGM / D_FGA).
+- NORMAL_FG_PCT: Field Goal Percentage of the team without considering defensive measures.
+- PCT_PLUSMINUS: The point differential per 100 possessions, measuring overall defensive
+    efficiency.
+- SEASON_ID: Identifier for the season in which the statistics are recorded.
+team_games:
+- SEASON_ID: Unique identifier for the NBA season.
+- TEAM_ID: Unique identifier for the team.
+- TEAM_ABBREVIATION: Abbreviated name of the team.
+- TEAM_NAME: Full name of the team.
+- GAME_ID: Unique identifier for the game.
+- GAME_DATE: Date on which the game was played.
+- MATCHUP: Comparison between the two teams in the game.
+- WL: Win or Loss indicator for the team (W/L).
+- MIN: Total minutes played by the team in the game.
+- FGM: Total field goals made by the team.
+- FGA: Total field goals attempted by the team.
+- FG_PCT: Field goal percentage for the team (FGM/FGA).
+- FG3M: Total three-point field goals made by the team.
+- FG3A: Total three-point field goals attempted by the team.
+- FG3_PCT: Three-point field goal percentage for the team (FG3M/FG3A).
+- FTM: Total free throws made by the team.
+- FTA: Total free throws attempted by the team.
+- FT_PCT: Free throw percentage for the team (FTM/FTA).
+- OREB: Total offensive rebounds collected by the team.
+- DREB: Total defensive rebounds collected by the team.
+- REB: Total rebounds collected by the team (OREB+DREB).
+- AST: Total assists made by the team.
+- STL: Total steals made by the team.
+- BLK: Total blocks made by the team.
+- TOV: Total turnovers committed by the team.
+- PF: Total personal fouls committed by the team.
+- PTS: Total points scored by the team.
+- PLUS_MINUS: Point differential for the team (points scored - points allowed).
+- VIDEO_AVAILABLE: Indicates if video highlights are available for the game.
+team_hustle:
+- TEAM_ID: Unique identifier for each team.
+- TEAM_NAME: Name of the team.
+- MIN: Total minutes played by the team during the season.
+- CONTESTED_SHOTS: Total number of shots contested by the team.
+- CONTESTED_SHOTS_2PT: Total number of two-point shots contested by the team.
+- CONTESTED_SHOTS_3PT: Total number of three-point shots contested by the team.
+- DEFLECTIONS: Total number of passes or shots deflected by the team.
+- CHARGES_DRAWN: Total number of offensive charges drawn by the team.
+- SCREEN_ASSISTS: Total number of assists attributed to screens set by the team.
+- SCREEN_AST_PTS: Total points scored from screen assists.
+- OFF_LOOSE_BALLS_RECOVERED: Total number of offensive loose balls recovered by the
+    team.
+- DEF_LOOSE_BALLS_RECOVERED: Total number of defensive loose balls recovered by the
+    team.
+- LOOSE_BALLS_RECOVERED: Total number of loose balls recovered by the team, both offensive
+    and defensive.
+- PCT_LOOSE_BALLS_RECOVERED_OFF: Percentage of loose balls recovered on the offensive
+    end.
+- PCT_LOOSE_BALLS_RECOVERED_DEF: Percentage of loose balls recovered on the defensive
+    end.
+- OFF_BOXOUTS: Total number of offensive box outs performed by the team.
+- DEF_BOXOUTS: Total number of defensive box outs performed by the team.
+- BOX_OUTS: Total number of box outs performed by the team, both offensive and defensive.
+- PCT_BOX_OUTS_OFF: Percentage of box outs on the offensive end.
+- PCT_BOX_OUTS_DEF: Percentage of box outs on the defensive end.
+- SEASON_ID: Unique identifier for the season.
+team_shot_locations:
+- 'Unnamed: 0': Identifier for the row (not meaningful)
+- 'Unnamed: 1': Another identifier for the row (not meaningful)
+- Restricted Area: Total shot attempts made from the restricted area during the season.
+- Restricted Area.1: Total shot attempts missed from the restricted area during the
+    season.
+- Restricted Area.2: Total points scored from the restricted area during the season.
+- In The Paint (Non-RA): Total shot attempts made from the paint excluding restricted
+    area during the season.
+- In The Paint (Non-RA).1: Total shot attempts missed from the paint excluding restricted
+    area during the season.
+- In The Paint (Non-RA).2: Total points scored from the paint excluding restricted
+    area during the season.
+- Mid-Range: Total shot attempts made from mid-range during the season.
+- Mid-Range.1: Total shot attempts missed from mid-range during the season.
+- Mid-Range.2: Total points scored from mid-range during the season.
+- Left Corner 3: Total shot attempts made from the left corner three during the season.
+- Left Corner 3.1: Total shot attempts missed from the left corner three during the
+    season.
+- Left Corner 3.2: Total points scored from the left corner three during the season.
+- Right Corner 3: Total shot attempts made from the right corner three during the
+    season.
+- Right Corner 3.1: Total shot attempts missed from the right corner three during
+    the season.
+- Right Corner 3.2: Total points scored from the right corner three during the season.
+- Above the Break 3: Total shot attempts made from above the break three during the
+    season.
+- Above the Break 3.1: Total shot attempts missed from above the break three during
+    the season.
+- Above the Break 3.2: Total points scored from above the break three during the season.
+- Backcourt: Total shot attempts made from backcourt during the season.
+- Backcourt.1: Total shot attempts missed from backcourt during the season.
+- Backcourt.2: Total points scored from backcourt during the season.
+- Corner 3: Total shot attempts made from the corner three during the season.
+- Corner 3.1: Total shot attempts missed from corner three during the season.
+- Corner 3.2: Total points scored from corner three during the season.
+- SEASON_ID: Identifier for the season for which the statistics are recorded.
+team_stats:
+- TEAM_ID: Unique identifier for the team.
+- TEAM_NAME: Name of the team.
+- GP: Total games played in the season.
+- W: Total games won.
+- L: Total games lost.
+- W_PCT: Winning percentage calculated as wins divided by games played.
+- MIN: Average minutes played per game.
+- FGM: Average field goals made per game.
+- FGA: Average field goals attempted per game.
+- FG_PCT: Field goal percentage calculated as field goals made divided by field goals
+    attempted.
+- FG3M: Average three-point field goals made per game.
+- FG3A: Average three-point field goals attempted per game.
+- FG3_PCT: Three-point field goal percentage calculated as three-point field goals
+    made divided by three-point field goals attempted.
+- FTM: Average free throws made per game.
+- FTA: Average free throws attempted per game.
+- FT_PCT: Free throw percentage calculated as free throws made divided by free throws
+    attempted.
+- OREB: Average offensive rebounds per game.
+- DREB: Average defensive rebounds per game.
+- REB: Average total rebounds per game.
+- AST: Average assists per game.
+- TOV: Average turnovers per game.
+- STL: Average steals per game.
+- BLK: Average blocks per game.
+- BLKA: Average blocked attempts per game.
+- PF: Average personal fouls per game.
+- PFD: Average personal fouls drawn per game.
+- PTS: Average points scored per game.
+- PLUS_MINUS: Average point differential per game (points scored minus points allowed).
+- GP_RANK: Rank of the team based on games played.
+- W_RANK: Rank of the team based on wins.
+- L_RANK: Rank of the team based on losses.
+- W_PCT_RANK: Rank of the team based on winning percentage.
+- MIN_RANK: Rank of the team based on average minutes played.
+- FGM_RANK: Rank of the team based on average field goals made.
+- FGA_RANK: Rank of the team based on average field goals attempted.
+- FG_PCT_RANK: Rank of the team based on field goal percentage.
+- FG3M_RANK: Rank of the team based on average three-point field goals made.
+- FG3A_RANK: Rank of the team based on average three-point field goals attempted.
+- FG3_PCT_RANK: Rank of the team based on three-point field goal percentage.
+- FTM_RANK: Rank of the team based on average free throws made.
+- FTA_RANK: Rank of the team based on average free throws attempted.
+- FT_PCT_RANK: Rank of the team based on free throw percentage.
+- OREB_RANK: Rank of the team based on average offensive rebounds.
+- DREB_RANK: Rank of the team based on average defensive rebounds.
+- REB_RANK: Rank of the team based on average total rebounds.
+- AST_RANK: Rank of the team based on average assists.
+- TOV_RANK: Rank of the team based on average turnovers.
+- STL_RANK: Rank of the team based on average steals.
+- BLK_RANK: Rank of the team based on average blocks.
+- BLKA_RANK: Rank of the team based on average blocked attempts.
+- PF_RANK: Rank of the team based on average personal fouls.
+- PFD_RANK: Rank of the team based on average personal fouls drawn.
+- PTS_RANK: Rank of the team based on average points scored.
+- PLUS_MINUS_RANK: Rank of the team based on average point differential.
+- SEASON_ID: Unique identifier for the season.
