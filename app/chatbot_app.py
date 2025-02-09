@@ -2,20 +2,29 @@ from pathlib import Path
 
 import instructor
 import load_dotenv
+import pandas as pd
 import streamlit as st
 import yaml
-from chatbot_utils import (
-    SqlCodeOutput,
-    TablesForSql,
-    get_sql_code_prompt,
-    initial_prompt_get_table,
-)
+from chatbot_utils import get_final_answer, get_sql_code, get_tables
 from openai import OpenAI
+from sqlalchemy import create_engine
 
 load_dotenv.load_dotenv()
 
 TABLE_DICTIONARY_PATH = Path("data/meta/table_dictionary.yaml")
 COLUMN_DICTIONARY_PATH = Path("data/meta/column_definitions.yaml")
+
+DB_PATH_DICT = {
+    "Regular Season Per Game": Path("data/database/nba-db-regseason.db"),
+    "Regular Season Per Possession": Path("data/database/nba-db-perposs-season.db"),
+}
+
+
+@st.cache_resource()
+def get_db_connection(selection: str, db_path_dict: dict = DB_PATH_DICT):
+    db_path = db_path_dict[selection]
+    return create_engine(f"duckdb:///{str(db_path)}").connect()
+
 
 # Open the YAML file and load its content
 with open(TABLE_DICTIONARY_PATH, "r") as file:
@@ -37,53 +46,59 @@ with st.expander("README", expanded=False):
         "This is a simple chatbot that can answer basic questions about NBA stats."
     )
 
-user_input = st.chat_input("Ask a basic NBA stats question...")
+# Create a form that will only submit when the user confirms their input.
+with st.form(key="text_form"):
+    # Textbox for user input
+    user_input = st.text_input("Ask a basic NBA stats question...")
+    # The form_submit_button triggers submission (or user can hit Enter when the text box is focused)
+    submit_button = st.form_submit_button(label="Submit")
 
-# Initial Response
-initial_user_prompt = initial_prompt_get_table(
-    user_input=user_input, table_dictionary=table_definitions
-)
+conn_path = "Regular Season Per Game"
 
-initial_result = client_instructor.chat.completions.create(
-    model="gpt-4o-mini",
-    messages=[
-        {
-            "role": "system",
-            "content": "You are an NBA data scientist who is writing a SQL query to answer a user question.",
-        },
-        {"role": "user", "content": initial_user_prompt},
-    ],
-    response_model=TablesForSql,
-    max_retries=5,
-)
 
-table_list_output = ", ".join(initial_result.table_list)
-column_definitions = yaml.dump(
-    {
-        k: v
-        for k, v in column_dictionary.items()
-        if k.lower() in initial_result.table_list
-    }
-)
+if submit_button:
+    if "conn" in st.session_state:
+        if st.session_state.previous_conn_path != conn_path:
+            st.session_state.conn.close()
+            st.session_state.conn = get_db_connection(selection=conn_path)
 
-# Get SQL Code
-sql_code_prompt = get_sql_code_prompt(
-    user_input=user_input,
-    selected_tables=table_list_output,
-    column_definitions=column_definitions,
-)
+    # If no connection exists or the user changes the selection, create a new connection
+    if (
+        "conn" not in st.session_state
+        or st.session_state.previous_conn_path != conn_path
+    ):
+        st.session_state.conn = get_db_connection(conn_path)
+        st.session_state.previous_conn_path = conn_path
 
-sql_result = client_instructor.chat.completions.create(
-    model="gpt-4o-mini",
-    messages=[
-        {
-            "role": "system",
-            "content": "You are an NBA data scientist who is writing a SQL query to answer a user question.",
-        },
-        {"role": "user", "content": sql_code_prompt},
-    ],
-    response_model=SqlCodeOutput,
-    max_retries=5,
-)
+    # depending on above selections, select correct database path
+    conn = get_db_connection(selection="Regular Season Per Game")
 
-st.markdown(f"SQL CODE: {sql_result.sql_code}")
+    table_results = get_tables(
+        client_instructor=client_instructor,
+        user_input=user_input,
+        table_dictionary=table_dictionary,
+    )
+
+    sql_result = get_sql_code(
+        client_instructor=client_instructor,
+        user_input=user_input,
+        initial_result=table_results,
+        column_dictionary=column_dictionary,
+    )
+
+    print(sql_result)
+
+    if st.session_state.conn:
+        # Example query
+
+        out_df = pd.read_sql_query(sql_result, st.session_state.conn).to_string()
+
+    # conn.close()
+
+    answer = get_final_answer(
+        client_instructor=client_instructor,
+        user_input=user_input,
+        table_output=out_df,
+    )
+
+    st.markdown(answer)
