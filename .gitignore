@@ -173,4 +173,5 @@ cython_debug/
 
 # personal
 .scratch/
-data/
+data/historical-pull/
+data/processed/
