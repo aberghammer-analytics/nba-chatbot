@@ -27,5 +27,6 @@ The application uses the following workflow under the hood:
 5. The SQL query is ran to get the data
 6. The LLM interprets the data and writes a response
 
-
+> [!WARNING]
+> This is a rough work in progress. The process has some failure points, but this was mainly intended as an experimental application. The database connection and resulting sql code may fail, but you should be able to retry your query.
 
