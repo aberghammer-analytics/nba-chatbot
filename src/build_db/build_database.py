@@ -14,7 +14,7 @@ app = typer.Typer()
 def build_db(
     input_folder: Annotated[
         Path, typer.Argument(help="Path to the folder containing the processed data")
-    ] = Path("data/processed/"),
+    ] = Path("data/processed/per_possession/playoffs/"),
     output_folder: Annotated[
         Path,
         typer.Argument(
@@ -23,7 +23,9 @@ def build_db(
             file_okay=False,
         ),
     ] = Path("data/database/"),
-    db_name: Annotated[str, typer.Argument(help="Name of the database")] = "nba-all",
+    db_name: Annotated[
+        str, typer.Argument(help="Name of the database")
+    ] = "nba-db-perposs-playoffs",
 ):
     logger.info("Setting up paths and database connection")
     all_files = [
@@ -39,9 +41,9 @@ def build_db(
         logger.info(f"Processing {file}")
         # TODO: If standard/per_possession, add to table name
         if "per_possession" in str(file):
-            table_name = f"{file.stem}_per_possession"
+            table_name = f"{file.stem}"
         else:
-            table_name = f"{file.stem}_standard"
+            table_name = f"{file.stem}"
 
         df = pd.read_csv(file)
         df.to_sql(table_name, conn, if_exists="replace", index=False)
